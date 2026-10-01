@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Installation and first launch
+    url: https://github.com/devin-lai/Gantry/blob/main/docs/getting-started.md
+    about: Check requirements, verification, and macOS first-launch steps.
+  - name: Privacy and sensitive reports
+    url: https://github.com/devin-lai/Gantry/blob/main/SECURITY.md
+    about: Do not post secrets or private transcripts in public issues.

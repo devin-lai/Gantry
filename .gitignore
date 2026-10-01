@@ -1,0 +1,30 @@
+# Public repository: documentation and artwork only.
+# Distribute audited binaries as GitHub Release assets.
+*.dmg
+*.dSYM
+*.dSYM.zip
+*.xcarchive
+*.xcresult
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.pfx
+*.p8
+*.pem
+*.key
+.env
+.env.*
+.DS_Store
+build/
+dist/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+# Keep application source and developer configuration out of this repository.
+Gantry/
+Gantry.xcodeproj/
+Config/
+*.swift
+*.xcconfig
+.claude/
+.codex/

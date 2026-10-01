@@ -1,0 +1,22 @@
+name: Feature request
+description: Describe a workflow Gantry could make easier.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What are you trying to do?
+      description: "Describe the problem, the agent you use, and what you do today."
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would a useful result look like?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or examples
+      description: "Optional. Use synthetic examples and remove private information."

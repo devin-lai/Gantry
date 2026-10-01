@@ -1,0 +1,44 @@
+name: Bug report
+description: Help reproduce a problem without sharing private data.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove credentials, private paths, account identifiers, and confidential prompts. Do not attach full session transcripts."
+  - type: input
+    id: gantry_version
+    attributes:
+      label: Gantry version and build
+      placeholder: "1.0.0, build 79"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: macOS version and Mac architecture
+      placeholder: "macOS 13.7, Apple silicon or Intel"
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Relevant coding agent and version
+      placeholder: "Claude Code, Codex, or another supported agent"
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: "Use a small example with synthetic data where possible."
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Optional redacted diagnostics or screenshot
+      description: "Read and redact Help → Diagnostic Report before sharing."

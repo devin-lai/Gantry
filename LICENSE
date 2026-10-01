@@ -1,0 +1,35 @@
+Gantry Personal Use License
+Copyright (c) 2026 Branovo. All rights reserved.
+
+1. Personal use permission
+You may download, install, and run the official Gantry binary releases without
+charge for your own personal, non-commercial use, and keep backup copies for
+that use. Personal use includes learning and hobby projects that are not carried
+out for an employer or client and are not part of a commercial activity.
+
+2. Commercial use
+Use for a business, employer, client, paid service, or other commercial activity
+requires separate written permission from the copyright holder. To request
+permission, open a licensing inquiry at https://github.com/devin-lai/Gantry/issues
+without including confidential business information.
+
+3. Source and distribution
+The application's source code is proprietary and is not provided under this
+license. This license does not grant permission to redistribute Gantry binaries,
+sell or sublicense the application, or distribute modified versions. Share the
+official repository or release link instead. Rights not expressly granted are
+reserved. Nothing here limits rights that applicable law requires or GitHub's
+platform terms provide for the public repository content.
+
+4. Repository documentation
+You may read the public documentation and share links to it. The personal-use
+permission above applies to official application binaries; it is not an
+open-source license for the application or a general reuse license for its
+branding, artwork, or documentation.
+
+5. Warranty and liability
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, AND NON-INFRINGEMENT. TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE
+COPYRIGHT HOLDER IS NOT LIABLE FOR CLAIMS, DAMAGES, OR OTHER LIABILITY ARISING
+FROM USE OF THE SOFTWARE. RIGHTS THAT CANNOT LAWFULLY BE EXCLUDED ARE PRESERVED.
