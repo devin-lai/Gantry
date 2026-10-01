@@ -15,5 +15,5 @@ private paths.
 
 Releases are distributed through this repository's Releases page. Check the
 published SHA-256 before opening a download. A checksum verifies bytes, not
-notarization or publisher identity. Build 79's prepared public preview is ad-hoc
+notarization or publisher identity. Build 79's public preview is ad-hoc
 signed and not notarized by Apple.

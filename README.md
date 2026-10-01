@@ -4,7 +4,7 @@
   <p><strong>See what your AI coding agents load, spend, and run.</strong></p>
   <p>A native macOS workspace for quota, context, MCP diagnostics, and fixes you can undo.</p>
   <p>
-    <a href="https://github.com/devin-lai/Gantry/releases">Downloads &amp; release updates</a> ·
+    <a href="https://github.com/devin-lai/Gantry/releases/download/v1.0.0-build79-preview/Gantry-1.0.0-build79-public-preview.dmg">Download Gantry for macOS</a> ·
     <a href="docs/getting-started.md">Get started</a> ·
     <a href="https://github.com/devin-lai/Gantry/issues/new/choose">Report a bug or suggest a feature</a>
   </p>
@@ -53,13 +53,13 @@ MCP benchmarking is an active operation: it can launch your configured servers o
 
 **Requires macOS 13 Ventura or later, on Apple silicon or Intel.**
 
-The public preview download is being prepared. Published builds will appear on the [Releases page](https://github.com/devin-lai/Gantry/releases); watch **Releases** to hear when one is available.
+[Download the build 79 public preview](https://github.com/devin-lai/Gantry/releases/download/v1.0.0-build79-preview/Gantry-1.0.0-build79-public-preview.dmg) · [Release notes and checksum](https://github.com/devin-lai/Gantry/releases/tag/v1.0.0-build79-preview). Watch **Releases** to hear when a newer build is available.
 
-1. Download the DMG from this repository's Releases page when available.
+1. Download the DMG from this repository's Releases page.
 2. Open it and drag **Gantry** into **Applications**.
 3. Open Gantry and follow the welcome screen. It detects supported local agent folders.
 
-The prepared build 79 preview is **ad-hoc signed and not notarized by Apple**. macOS may block its first launch. After verifying the release checksum and deciding to trust the download, use **System Settings → Privacy & Security → Open Anyway**. [Installation, checksum verification, and uninstall instructions.](docs/getting-started.md)
+The build 79 public preview is **ad-hoc signed and not notarized by Apple**. macOS may block its first launch. After verifying the release checksum and deciding to trust the download, use **System Settings → Privacy & Security → Open Anyway**. [Installation, checksum verification, and uninstall instructions.](docs/getting-started.md)
 
 ## Know what the numbers mean
 

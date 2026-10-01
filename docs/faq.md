@@ -45,7 +45,7 @@ rules can all produce differences.
 
 ### Why does macOS block the preview?
 
-Build 79's prepared public preview is ad-hoc signed and not notarized by Apple.
+Build 79's public preview is ad-hoc signed and not notarized by Apple.
 See the [installation guide](getting-started.md) for verification and first-launch
 steps. Do not interpret a checksum as notarization.
 

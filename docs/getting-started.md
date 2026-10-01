@@ -6,7 +6,7 @@ supported coding agent with local records makes the app useful.
 
 ## Install
 
-1. Get the DMG and `SHA256SUMS.txt` from the [official Releases page](https://github.com/devin-lai/Gantry/releases) when a build is published.
+1. Get the DMG and `SHA256SUMS.txt` from the [official Releases page](https://github.com/devin-lai/Gantry/releases) for the published preview.
 2. Compare the DMG's checksum with the value in the release notes or checksum file:
 
    ```sh
@@ -16,7 +16,7 @@ supported coding agent with local records makes the app useful.
 3. Open the disk image and drag Gantry into Applications.
 4. Eject the disk image and open Gantry from Applications.
 
-Build 79's prepared public preview has an ad-hoc signature and is not notarized
+Build 79's public preview has an ad-hoc signature and is not notarized
 by Apple. A checksum identifies the downloaded bytes; it does not establish
 Apple's approval or the publisher's identity. If macOS blocks the app, verify
 the download and decide whether you trust it, then use **System Settings →
