@@ -1,18 +1,20 @@
 <div align="center">
-  <img src="assets/gantry-icon.png" width="112" alt="Gantry's teal octopus mascot">
+  <img src="assets/gantry-icon.png" width="96" alt="Gantry's teal octopus mascot">
   <h1>Gantry</h1>
-  <p><strong>See what your AI coding agents load, spend, and run.</strong></p>
-  <p>A native macOS workspace for quota, context, MCP diagnostics, and fixes you can undo.</p>
+  <p><strong>Know your quota. Understand your context. Fix your setup.</strong></p>
+  <p>A native macOS dashboard for <strong>Claude Code, Codex, and your other AI coding tools</strong>.</p>
   <p>
-    <a href="https://github.com/devin-lai/Gantry/releases/download/v1.0.0-build79-preview/Gantry-1.0.0-build79-public-preview.dmg">Download Gantry for macOS</a> ·
-    <a href="docs/getting-started.md">Get started</a> ·
-    <a href="https://github.com/devin-lai/Gantry/issues/new/choose">Report a bug or suggest a feature</a>
+    <a href="https://github.com/devin-lai/Gantry/releases/download/v1.0.0-build79-preview/Gantry-1.0.0-build79-public-preview.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-Public_preview-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry for macOS — build 79 public preview"></a>
   </p>
+  <p><strong>macOS 13+ · Apple silicon &amp; Intel · Free for personal, non-commercial use</strong></p>
+  <p>This preview is ad-hoc signed and <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">Read the first-launch instructions.</a></p>
+  <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p>
-    <img src="https://img.shields.io/badge/macOS-13%2B-242938?logo=apple&amp;logoColor=white" alt="macOS 13 or later">
-    <img src="https://img.shields.io/badge/Apple_silicon_%26_Intel-supported-168577" alt="Apple silicon and Intel">
-    <img src="https://img.shields.io/badge/personal_use-free-168577" alt="Free for personal use">
-    <img src="https://img.shields.io/badge/source-proprietary-626B75" alt="Proprietary source">
+    <a href="#why-gantry">Why Gantry</a> ·
+    <a href="#choose-your-first-workflow">Try a workflow</a> ·
+    <a href="docs/compatibility.md">Supported tools</a> ·
+    <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.0.0-build79-preview">Release notes</a> ·
+    <a href="https://github.com/devin-lai/Gantry/issues/new/choose">Feedback</a>
   </p>
 </div>
 
@@ -20,40 +22,58 @@
 
 *Screenshots use synthetic demo data. Numbers illustrate the interface; appearance and available measurements vary by build and agent.*
 
-## Your agents have a lot going on. Get one clear view.
+## Why Gantry
 
-A quota window is running low. A skill never makes it into context. An MCP server takes too long to start. A hook slows every turn. Gantry brings the local evidence together so you can see what needs attention and decide what to change.
+Your coding setup is spread across session logs, instruction files, skills, hooks, and MCP servers. Gantry brings that local evidence into one workspace so you can see what needs attention and decide what to change.
 
-Use it alongside **Claude Code, Codex, Cursor, Gemini CLI, OpenCode, and Copilot CLI**. You can start with just one agent. [Coverage differs by tool.](docs/compatibility.md)
+Use Gantry alongside **Claude Code · Codex · Cursor · Gemini CLI · OpenCode · Copilot CLI**. Start with one agent; no migration or Gantry account is needed. **Coverage differs:** quota is available for Claude Code and Codex; Cursor coverage is configuration inventory, without chat usage or quota in this build. [See the complete coverage table.](docs/compatibility.md)
 
-| What you want to know | What Gantry helps you inspect |
+| When this happens… | Open Gantry to… |
 | --- | --- |
-| **How much quota is left?** | Locally cached Claude Code and Codex quota windows, reset times, freshness, and pace, with a compact menu bar view and optional notifications. |
-| **What loads before my first prompt?** | Instruction files, rules, skills, agent definitions, and MCP schemas, with token estimates and measured startup context where sessions record it. |
-| **Why does this setup feel slow?** | MCP initialization and tool-list timings, plus API, tool, and hook time where agents record those measurements. |
-| **What should I fix first?** | Doctor findings ranked by priority, with evidence and supported local changes you can preview before applying. |
-| **What is running right now?** | Agent processes and MCP children, CPU and memory use, live session context where available, and orphaned servers. |
-| **Where did the tokens go?** | Project and session views with recorded usage, context timelines, and clearly labelled API-rate cost estimates. |
+| **“I'm close to my limit.”** | See cached Claude Code and Codex quota windows, reset times, freshness, and pace. Keep a compact view in the menu bar. |
+| **“What loads before I even type?”** | Inspect instructions, rules, skills, agent definitions, and MCP schemas, with token estimates and recorded startup context where available. |
+| **“Something in my setup feels slow.”** | Inspect MCP startup and tool-list timings, plus recorded API, tool, and hook time. |
+| **“Which configuration should I change?”** | Follow Doctor findings to the evidence, preview supported file edits, and keep a local backup for Undo. |
+
+## Choose your first workflow
+
+After [installing](docs/getting-started.md), pick the question that brought you here:
+
+| Start here | What to try |
+| --- | --- |
+| **Check quota runway** | Open **Overview** and check the quota source's freshness before planning your next session. |
+| **Understand startup context** | Open **Inventory** to inspect what your project and agent configuration contribute. |
+| **Investigate a slow MCP server** | Inspect available timing evidence; choose an active benchmark only if you want to run the configured server. |
+| **Review one setup finding** | Open **Doctor**, inspect the evidence, and preview a supported change before applying it. |
+
+[Walk through these four workflows →](docs/workflows.md)
 
 ## Inspect. Preview. Undo.
 
 Gantry's Doctor connects a finding to the evidence and a next step. Supported file edits show the exact change and create a backup before writing. Undo is available in the app and with **⌘Z**. Removing a file uses the Trash; stopping a process has its own recovery limits.
 
+<details>
+  <summary><strong>See Doctor in action</strong> — skills, MCP servers, and hooks</summary>
+
 ![Gantry Doctor: prioritized findings for skills, MCP servers, and hooks](assets/doctor-light.png)
 
-Inventory brings skills, sub-agents, MCP servers, rules, commands, hooks, and plugins into one place. **⌘K** jumps to a project, session, skill, server, or section; **⌘R** refreshes the workspace.
+*Synthetic demo data; available findings depend on your configuration and build.*
+
+</details>
+
+You can also explore **Projects** and **Sessions** for recorded usage and API-rate cost estimates, or **Live Runtime** for agent and MCP processes, CPU, and memory. **⌘K** jumps to a project, session, skill, server, or section; **⌘R** refreshes the workspace.
 
 ## Local data. No Gantry account.
 
 Gantry indexes records already on your Mac and keeps its index and backups locally. It has no Gantry account or analytics telemetry. Session data is not uploaded to a Gantry service.
 
-MCP benchmarking is an active operation: it can launch your configured servers or contact an HTTP server you choose. Those servers can make their own network requests. The welcome screen asks about automatic stdio benchmarking; you can change the choice in Settings. [Read the privacy details.](PRIVACY.md)
+MCP benchmarking is an active operation: it can launch configured servers or contact an HTTP endpoint you choose. Those servers can use their configured credentials and make their own network requests. You choose whether automatic stdio benchmarking is enabled during welcome or in Settings. [Read the privacy details.](PRIVACY.md)
 
 ## Download and first launch
 
 **Requires macOS 13 Ventura or later, on Apple silicon or Intel.**
 
-[Download the build 79 public preview](https://github.com/devin-lai/Gantry/releases/download/v1.0.0-build79-preview/Gantry-1.0.0-build79-public-preview.dmg) · [Release notes and checksum](https://github.com/devin-lai/Gantry/releases/tag/v1.0.0-build79-preview). Watch **Releases** to hear when a newer build is available.
+[Download the build 79 public preview](https://github.com/devin-lai/Gantry/releases/download/v1.0.0-build79-preview/Gantry-1.0.0-build79-public-preview.dmg) · [Release notes and checksum](https://github.com/devin-lai/Gantry/releases/tag/v1.0.0-build79-preview). To hear about new builds, use **Watch → Custom → Releases** on this repository. Build 79 has no built-in update feed.
 
 1. Download the DMG from this repository's Releases page.
 2. Open it and drag **Gantry** into **Applications**.
@@ -71,11 +91,11 @@ The build 79 public preview is **ad-hoc signed and not notarized by Apple**. mac
 
 [Supported tools and limits](docs/compatibility.md) · [Frequently asked questions](docs/faq.md) · [Build 79 artifact audit](docs/build79-audit.md)
 
-## Help make Gantry more useful
+## Help another agent user find Gantry
 
 Found a bug? [Send a report](https://github.com/devin-lai/Gantry/issues/new?template=bug_report.yml). Have a workflow Gantry could improve? [Describe it](https://github.com/devin-lai/Gantry/issues/new?template=feature_request.yml). Please remove secrets, private paths, and confidential prompts from anything you share.
 
-If Gantry helps you understand your setup, **star this repository** so other agent users can find it, and share the repository link with someone who could use it. Feedback and documentation improvements are welcome; the application source remains private.
+If Gantry is useful to you, **star this repository** and share [the repository link](https://github.com/devin-lai/Gantry) with someone who uses a supported coding tool. [Short descriptions and sharing guidance](docs/share.md) make it easier to explain what it does. Documentation corrections and translations are welcome; the application source remains private. [How to contribute](CONTRIBUTING.md) · [Report a sensitive security issue privately](SECURITY.md).
 
 ## License
 

@@ -1,5 +1,8 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Find your first workflow
+    url: https://github.com/devin-lai/Gantry/blob/main/docs/workflows.md
+    about: Start with quota, startup context, MCP diagnostics, or a Doctor finding.
   - name: Installation and first launch
     url: https://github.com/devin-lai/Gantry/blob/main/docs/getting-started.md
     about: Check requirements, verification, and macOS first-launch steps.

@@ -17,6 +17,17 @@ employer, and client use requires separate permission. See [LICENSE](../LICENSE)
 No. Start with one supported tool that has local records. Different agents
 expose different measurements; see [compatibility](compatibility.md).
 
+### Does it replace my coding agent?
+
+No. Gantry is a companion dashboard for inspecting local records and supported
+configuration. Keep using your existing coding tool. Start with one question in
+the [workflow guide](workflows.md).
+
+### Does the Chinese README mean the app has a Chinese interface?
+
+The Chinese README is translated documentation. It does not promise a localized
+application interface. [Read the Chinese introduction.](../README.zh-CN.md)
+
 ### Does Gantry need my API keys or provider login?
 
 There is no Gantry login or API-key setup for local inspection. If you choose

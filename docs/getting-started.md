@@ -33,6 +33,7 @@ Privacy & Security → Open Anyway** after the attempted launch. Follow
 
 Missing records or unsupported measurements are expected for some tools. Check
 [coverage](compatibility.md) before interpreting an empty view as a problem.
+For a concrete place to start, [choose one of four workflows](workflows.md).
 
 ## Updates
 

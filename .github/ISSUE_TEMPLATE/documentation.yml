@@ -1,0 +1,27 @@
+name: Documentation or translation
+description: Help make the guides clearer and more accurate.
+title: "[Docs]: "
+labels: [documentation]
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove private paths, credentials, account identifiers, and confidential prompts. Public documentation and translations are welcome; the application source remains private."
+  - type: input
+    id: page
+    attributes:
+      label: Which page or section?
+      placeholder: "README, Chinese introduction, installation guide, or another page"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect?
+      description: "Include a short quotation or a public link to the relevant section."
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording or correction
+      description: "Optional. Keep coverage, privacy, signing, and licensing claims aligned with the official documentation."

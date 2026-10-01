@@ -1,6 +1,7 @@
 name: Feature request
 description: Describe a workflow Gantry could make easier.
 title: "[Feature]: "
+labels: [enhancement]
 body:
   - type: textarea
     id: workflow
