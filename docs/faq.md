@@ -3,7 +3,9 @@
 ### Is Gantry open source?
 
 No. This repository contains public documentation, feedback, and binary
-releases. The application source remains private.
+releases. The application source remains private. GitHub-generated source
+archives contain this repository's documentation and artwork, not the app
+implementation. Install the DMG from a published release.
 
 ### Is it free?
 
