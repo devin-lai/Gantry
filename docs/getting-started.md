@@ -6,17 +6,17 @@ supported coding agent with local records makes the app useful.
 
 ## Install
 
-1. Get the DMG and `SHA256SUMS.txt` from the [official Releases page](https://github.com/devin-lai/Gantry/releases) for the published preview.
+1. Get `Gantry-1.1.0.dmg` and `SHA256SUMS.txt` from the [official 1.1.0 release](https://github.com/devin-lai/Gantry/releases/tag/v1.1.0).
 2. Compare the DMG's checksum with the value in the release notes or checksum file:
 
    ```sh
-   shasum -a 256 ~/Downloads/Gantry-1.0.0-build79-public-preview.dmg
+   shasum -a 256 ~/Downloads/Gantry-1.1.0.dmg
    ```
 
 3. Open the disk image and drag Gantry into Applications.
 4. Eject the disk image and open Gantry from Applications.
 
-Build 79's public preview has an ad-hoc signature and is not notarized
+Gantry 1.1.0 has an ad-hoc signature and is not notarized
 by Apple. A checksum identifies the downloaded bytes; it does not establish
 Apple's approval or the publisher's identity. If macOS blocks the app, verify
 the download and decide whether you trust it, then use **System Settings →
@@ -29,6 +29,7 @@ Privacy & Security → Open Anyway** after the attempted launch. Follow
 - Allow access to relevant folders if you want Gantry to inspect those projects.
 - Start with **Overview** for quota, context, and findings, then **Doctor** for the evidence and next steps.
 - Open **Inventory** for skills and MCP servers, **Sessions** for recorded usage, or **Live Runtime** for running processes.
+- In **Sessions**, type to filter titles and projects; press **Return** to search conversation contents. Open a result to read the passage and use **Copy resume command** where supported.
 - Use **⌘K** to jump, **⌘R** to refresh, and **⌘Z** to undo the last supported file change.
 
 Missing records or unsupported measurements are expected for some tools. Check
@@ -37,7 +38,7 @@ For a concrete place to start, [choose one of four workflows](workflows.md).
 
 ## Updates
 
-Build 79 does not check a remote update feed. Watch the repository's **Releases**
+Gantry 1.1.0 does not check a remote update feed. Watch the repository's **Releases**
 notifications and replace the app manually when a newer published build is
 available. Ad-hoc builds may ask for protected-folder access again after an
 update.

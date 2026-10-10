@@ -3,9 +3,9 @@
   <h1>Gantry</h1>
   <p><strong>看清配额，理解上下文，检查你的 AI 编程配置。</strong></p>
   <p>面向 <strong>Claude Code、Codex 及其他 AI 编程工具</strong>的原生 macOS 仪表盘。</p>
-  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v1.0.0-build79-preview/Gantry-1.0.0-build79-public-preview.dmg"><strong>下载 macOS 公开预览版</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.0.0-build79-preview">发布说明与校验值</a></p>
+  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v1.1.0/Gantry-1.1.0.dmg"><strong>下载 Gantry 1.1.0</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.1.0">发布说明与校验值</a></p>
   <p><strong>macOS 13+ · Apple 芯片与 Intel · 个人非商业用途免费</strong></p>
-  <p>此预览版采用 ad-hoc 签名，<strong>未经 Apple 公证</strong>。应用源代码保持私有。</p>
+  <p>此版本采用 ad-hoc 签名，<strong>未经 Apple 公证</strong>。应用源代码保持私有。</p>
   <p><a href="README.md">English</a> · <strong>简体中文</strong></p>
 </div>
 
@@ -14,6 +14,8 @@
 *截图使用合成演示数据。数字仅用于展示界面；界面和可用测量项会随版本及工具而变化。此文档提供中文介绍，不代表应用界面已支持中文。*
 
 ## Gantry 能帮你看清什么
+
+**1.1 新增：** 搜索历史对话并返回相关项目，查看会话停止的记录原因、值得复查的命令、重试与上下文压缩；Claude Code 和 Codex 支持 Working / Ready 状态，Claude Code 还可显示等待权限确认的状态与可选通知。新增 Cursor 桌面对话历史，并以 Antigravity 替换 Gemini CLI。[完整更新说明（英文）](docs/releases/1.1.0.md)。
 
 会话日志、指令文件、技能、钩子和 MCP 服务器分散在不同位置。Gantry 将本地证据汇集到一个工作区，帮助你判断哪些配置值得关注，以及是否需要修改。
 
@@ -24,9 +26,9 @@
 | **MCP 或钩子为什么慢？** | MCP 初始化和工具列表获取耗时，以及编程工具记录的 API、工具和钩子耗时。 |
 | **配置问题该怎么处理？** | Doctor 按优先级展示发现、证据和下一步；支持的文件修改可以先预览，再应用，并保留本地备份以便撤销。 |
 
-支持的工具包括 **Claude Code、Codex、Cursor、Gemini CLI、OpenCode 和 Copilot CLI**。只用其中一种也可以，无需迁移工作流或注册 Gantry 账户。
+支持的工具包括 **Claude Code、Codex、Cursor、Antigravity、OpenCode 和 Copilot CLI**。只用其中一种也可以，无需迁移工作流或注册 Gantry 账户。
 
-**各工具覆盖范围不同。** 配额覆盖适用于 Claude Code 和 Codex；此版本对 Cursor 的覆盖是配置清单，不包含聊天用量或配额。其他工具也不宣称具备配额覆盖。[完整兼容性与限制（英文）](docs/compatibility.md)。
+**各工具覆盖范围不同。** 配额覆盖适用于 Claude Code 和 Codex；Cursor 支持桌面对话历史、搜索与配置清单，用量、费用与配额不可用。其他工具也不宣称具备配额覆盖。[完整兼容性与限制（英文）](docs/compatibility.md)。
 
 ## 从一个问题开始
 
@@ -54,15 +56,15 @@
 
 Gantry 的索引和修改备份保存在你的 Mac 上。它**不要求 Gantry 账户，不含分析遥测**，也不会将会话历史上传到 Gantry 服务。
 
-MCP 基准测试属于主动操作：它可能启动已配置的服务器，或访问你选择的 HTTP 端点。服务器可以使用自身配置中的凭据并发起网络请求。欢迎界面或 Settings 中可选择是否启用自动 stdio 基准测试。[隐私说明（英文）](PRIVACY.md) · [build 79 下载文件审计（英文）](docs/build79-audit.md)。
+MCP 基准测试属于主动操作：它可能启动已配置的服务器，或访问你选择的 HTTP 端点。服务器可以使用自身配置中的凭据并发起网络请求。欢迎界面或 Settings 中可选择是否启用自动 stdio 基准测试。[隐私说明（英文）](PRIVACY.md) · [1.1.0 下载文件审计（英文）](docs/1.1.0-audit.md)。
 
 ## 下载与首次启动
 
-1. 从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v1.0.0-build79-preview)下载 DMG 和 `SHA256SUMS.txt`，核对 SHA-256。
+1. 从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v1.1.0)下载 `Gantry-1.1.0.dmg` 和 `SHA256SUMS.txt`，核对 SHA-256。
 2. 打开 DMG，将 **Gantry** 拖入 **Applications**。
 3. 打开应用，阅读欢迎界面，并选择 MCP 基准测试偏好。
 
-要求 **macOS 13 Ventura 或更新版本**，支持 Apple 芯片和 Intel。build 79 公开预览版采用 ad-hoc 签名，**未经 Apple 公证**。如果 macOS 阻止首次启动，请在核对下载文件并决定信任它后，按[安装说明（英文）](docs/getting-started.md)操作。校验值用于确认文件内容，不代表 Apple 认可或发布者身份认证。
+要求 **macOS 13 Ventura 或更新版本**，支持 Apple 芯片和 Intel。Gantry 1.1.0 采用 ad-hoc 签名，**未经 Apple 公证**。如果 macOS 阻止首次启动，请在核对下载文件并决定信任它后，按[安装说明（英文）](docs/getting-started.md)操作。校验值用于确认文件内容，不代表 Apple 认可或发布者身份认证。
 
 此版本没有内置更新源。可在仓库中选择 **Watch → Custom → Releases**，接收新版本通知。
 

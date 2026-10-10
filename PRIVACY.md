@@ -33,7 +33,7 @@ Choose your benchmarking preference on the welcome screen or in Settings.
 
 ## Updates and reports
 
-Build 79 has no built-in update-feed address, so its Check for Updates action
+Gantry 1.1.0 has no built-in update-feed address, so its Check for Updates action
 makes no update request. Download future builds from the official Releases page.
 Opening provider help or usage links opens that provider's website in a browser.
 

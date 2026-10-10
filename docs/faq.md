@@ -54,9 +54,9 @@ Quota is a locally cached reading. Costs are estimates at API rates rather than
 your subscription bill. Missing fields, stale records, and provider accounting
 rules can all produce differences.
 
-### Why does macOS block the preview?
+### Why does macOS block the download?
 
-Build 79's public preview is ad-hoc signed and not notarized by Apple.
+Gantry 1.1.0 is ad-hoc signed and not notarized by Apple.
 See the [installation guide](getting-started.md) for verification and first-launch
 steps. Do not interpret a checksum as notarization.
 

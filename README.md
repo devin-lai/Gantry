@@ -4,16 +4,16 @@
   <p><strong>Know your quota. Understand your context. Fix your setup.</strong></p>
   <p>A native macOS dashboard for <strong>Claude Code, Codex, and your other AI coding tools</strong>.</p>
   <p>
-    <a href="https://github.com/devin-lai/Gantry/releases/download/v1.0.0-build79-preview/Gantry-1.0.0-build79-public-preview.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-Public_preview-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry for macOS — build 79 public preview"></a>
+    <a href="https://github.com/devin-lai/Gantry/releases/download/v1.1.0/Gantry-1.1.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v1.1.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 1.1.0 for macOS"></a>
   </p>
   <p><strong>macOS 13+ · Apple silicon &amp; Intel · Free for personal, non-commercial use</strong></p>
-  <p>This preview is ad-hoc signed and <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">Read the first-launch instructions.</a></p>
+  <p>This release is ad-hoc signed and <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">Read the first-launch instructions.</a></p>
   <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p>
     <a href="#why-gantry">Why Gantry</a> ·
     <a href="#choose-your-first-workflow">Try a workflow</a> ·
     <a href="docs/compatibility.md">Supported tools</a> ·
-    <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.0.0-build79-preview">Release notes</a> ·
+    <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.1.0">What's new in 1.1</a> ·
     <a href="https://github.com/devin-lai/Gantry/issues/new/choose">Feedback</a>
   </p>
 </div>
@@ -22,11 +22,17 @@
 
 *Screenshots use synthetic demo data. Numbers illustrate the interface; appearance and available measurements vary by build and agent.*
 
+## New in 1.1: pick up where your agents left off
+
+Find an earlier conversation, see why a session stopped, and catch the moment your agent needs you. **Gantry 1.1** adds conversation search and easier navigation back to your work, live Working / Ready states for Claude Code and Codex, and Claude Code permission-wait notices. Session details now explain recorded interruptions, permission decisions, commands worth reviewing, retries, and compactions.
+
+**Cursor desktop conversation history** joins the workspace, and **Antigravity** replaces Gemini CLI with local conversation and configuration support. [Explore the changes →](docs/releases/1.1.0.md)
+
 ## Why Gantry
 
 Your coding setup is spread across session logs, instruction files, skills, hooks, and MCP servers. Gantry brings that local evidence into one workspace so you can see what needs attention and decide what to change.
 
-Use Gantry alongside **Claude Code · Codex · Cursor · Gemini CLI · OpenCode · Copilot CLI**. Start with one agent; no migration or Gantry account is needed. **Coverage differs:** quota is available for Claude Code and Codex; Cursor coverage is configuration inventory, without chat usage or quota in this build. [See the complete coverage table.](docs/compatibility.md)
+Use Gantry alongside **Claude Code · Codex · Cursor · Antigravity · OpenCode · Copilot CLI**. Start with one agent; no migration or Gantry account is needed. **Coverage differs:** quota is available for Claude Code and Codex; Cursor includes searchable desktop conversations and configuration inventory, with usage, cost, and quota unavailable. [See the complete coverage table.](docs/compatibility.md)
 
 | When this happens… | Open Gantry to… |
 | --- | --- |
@@ -73,13 +79,13 @@ MCP benchmarking is an active operation: it can launch configured servers or con
 
 **Requires macOS 13 Ventura or later, on Apple silicon or Intel.**
 
-[Download the build 79 public preview](https://github.com/devin-lai/Gantry/releases/download/v1.0.0-build79-preview/Gantry-1.0.0-build79-public-preview.dmg) · [Release notes and checksum](https://github.com/devin-lai/Gantry/releases/tag/v1.0.0-build79-preview). To hear about new builds, use **Watch → Custom → Releases** on this repository. Build 79 has no built-in update feed.
+[Download Gantry 1.1.0](https://github.com/devin-lai/Gantry/releases/download/v1.1.0/Gantry-1.1.0.dmg) · [Release notes and checksum](https://github.com/devin-lai/Gantry/releases/tag/v1.1.0). To hear about new builds, use **Watch → Custom → Releases** on this repository. This release has no built-in update feed.
 
 1. Download the DMG from this repository's Releases page.
 2. Open it and drag **Gantry** into **Applications**.
 3. Open Gantry and follow the welcome screen. It detects supported local agent folders.
 
-The build 79 public preview is **ad-hoc signed and not notarized by Apple**. macOS may block its first launch. After verifying the release checksum and deciding to trust the download, use **System Settings → Privacy & Security → Open Anyway**. [Installation, checksum verification, and uninstall instructions.](docs/getting-started.md)
+Gantry 1.1.0 is **ad-hoc signed and not notarized by Apple**. macOS may block its first launch. After verifying the release checksum and deciding to trust the download, use **System Settings → Privacy & Security → Open Anyway**. [Installation, checksum verification, and uninstall instructions.](docs/getting-started.md)
 
 ## Know what the numbers mean
 
@@ -89,7 +95,7 @@ The build 79 public preview is **ad-hoc signed and not notarized by Apple**. mac
 - When a source is missing, unreadable, or incomplete, Gantry labels the limitation. Features depend on what each agent records.
 - Gantry helps you inspect configuration; it cannot guarantee lower spending, faster models, or better answers.
 
-[Supported tools and limits](docs/compatibility.md) · [Frequently asked questions](docs/faq.md) · [Build 79 artifact audit](docs/build79-audit.md)
+[Supported tools and limits](docs/compatibility.md) · [Frequently asked questions](docs/faq.md) · [1.1.0 artifact audit](docs/1.1.0-audit.md)
 
 ## Help another agent user find Gantry
 

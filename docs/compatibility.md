@@ -1,19 +1,31 @@
 # Supported tools and measurement limits
 
 Gantry is a native macOS application for **macOS 13 or later**, with a universal
-Apple silicon and Intel binary. The following describes the build 79 reader
+Apple silicon and Intel binary. The following describes the 1.1.0 reader
 families, not a promise that every future agent release uses the same formats.
 
 | Tool | Local records Gantry understands | Main limits |
 | --- | --- | --- |
 | Claude Code | Sessions, usage, cached quota, instructions, skills, agents, MCP, hooks, plugins, and recorded timing. | Quota is cached. Some sessions omit API timing or leave context growth unexplained. |
 | Codex | Local session database and rollout files, recorded usage and quota, instructions, skills, agents, MCP, and supported settings. | Database and rollout coverage can differ. Missing or unreadable sources can make totals partial. |
-| Cursor | Local configuration, rules, skills, agents, MCP, hooks, and plugins where present. | Gantry does not index Cursor chat usage or quota in this build. |
-| Gemini CLI | Local chats and supported configuration, instructions, extensions, and MCP inventory. | No quota coverage is claimed. Fields depend on the local chat format. |
+| Cursor | Desktop conversation history and search, project discovery, configuration, rules, skills, agents, MCP, hooks, and plugins where present. | Usage, cost, quota, and a terminal resume command are unavailable. Missing or unsupported message records make search partial. |
+| Antigravity | Local conversation indexes, readable SQLite conversation stores and JSONL transcripts, usage where recorded, configuration, instructions, skills, and MCP inventory. | Older encrypted conversation files cannot be read. Transcript search needs a readable JSONL transcript. No quota coverage is claimed. Replaces Gemini CLI support in 1.1. |
 | OpenCode | Local session database and supported configuration, instructions, agents, skills, and MCP inventory. | Recorded fields vary. No quota coverage is claimed. |
 | Copilot CLI | Local session database and supported instructions, skills, agents, plugins, hooks, and MCP inventory. | Coverage varies by record format. No quota coverage is claimed. |
 
 ## How to interpret the measurements
+
+**Live states** distinguish Working and Ready for Claude Code and Codex, and
+recorded permission waits for Claude Code. Other tools show Running. Optional
+notices depend on macOS notification permission and the agent's local records.
+Codex approval prompts and questions are not presented as a Waiting state.
+
+**Session details** show recorded endings and commands for Claude Code and
+Codex. Claude Code permission-decision counts require records from 2.1.294 or
+later. Command review describes recorded tool inputs; it does not establish
+what a command changed or provide a security verdict. Older or large Codex
+rollouts may be read only from their tail, leaving endings, commands, and
+compaction usage unavailable. Gantry labels those gaps.
 
 **Quota** comes from values the agent cached locally; it can be out of date.
 Window attribution is a proxy based on recorded sessions. Providers do not
