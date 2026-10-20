@@ -19,6 +19,11 @@ macOS may ask for access to Desktop, Documents, or Downloads when recorded
 projects are located there. Some measurements may be incomplete if access is
 denied.
 
+Recorded file edits add file paths and change metadata to the local index;
+Gantry does not keep the patches or edited file contents as part of that
+changed-file list. **Load session details** deliberately reads more of a
+selected local Codex conversation and caches the resulting metadata.
+
 ## Changes and active operations
 
 Supported configuration edits are previewed and backed up before writing. Files
@@ -31,9 +36,15 @@ contact configured HTTP servers. Servers may use their configuration,
 environment variables, or credentials and may make their own network requests.
 Choose your benchmarking preference on the welcome screen or in Settings.
 
+Git checks use read-only status, tracked-file, and history queries in relevant
+checkouts. They do not commit or modify repository contents, and can be turned
+off in Settings. **Copy handoff note** places recorded session content on the
+clipboard only when requested. That text can include private prompts, replies,
+commands, and paths; review it before pasting into another app or service.
+
 ## Updates and reports
 
-Gantry 1.1.0 has no built-in update-feed address, so its Check for Updates action
+Gantry 1.2.0 has no built-in update-feed address, so its Check for Updates action
 makes no update request. Download future builds from the official Releases page.
 Opening provider help or usage links opens that provider's website in a browser.
 

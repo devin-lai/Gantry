@@ -1,4 +1,4 @@
-# Four ways to start with Gantry
+# Six ways to start with Gantry
 
 [Download and install](getting-started.md) · [Supported tools](compatibility.md) · [Back to the overview](../README.md)
 
@@ -56,6 +56,34 @@ does not establish how every future session will perform.
 Use this to make a deliberate configuration change. Not every finding has an
 automatic fix. File removal uses the Trash, and process stopping has different
 recovery limits; neither should be interpreted as a file edit that ⌘Z can restore.
+
+## 5. Pick up an unfinished session
+
+**For users with recorded session endings or file edits.**
+
+1. Open **Sessions**, find a conversation, and inspect its recorded ending.
+2. Review **Changed files** and their current Git state. Use the uncommitted-edits filter to find sessions that may need attention.
+3. If an older Codex session offers **Load session details**, choose it to read more of that local conversation. You can cancel or retry.
+4. Use **Copy handoff note** to carry the recorded context forward, or **Copy resume command** where supported.
+
+Review a handoff note before pasting it elsewhere: it can include private
+prompts, replies, commands, and paths. Changed-file records cover supported
+edit tools, not every shell-command side effect. Git checks are read-only,
+reflect the time checked, and do not identify who owns a change.
+
+## 6. Understand one tool's capabilities in one project
+
+**For users with skills, plugins, or MCP configuration to untangle.**
+
+1. Open **Agents** or **Inventory** and choose the tool and working directory.
+2. Follow a capability summary to its records, sources, and configuration status.
+3. For MCP, inspect the latest check and its freshness. Run a new check only for a server you intend to execute.
+4. Where a supported Claude Code or Codex change is offered, review its scope and preview, apply it, and read the verification outcome.
+
+Configuration availability, Gantry's connection check, and verification in
+the coding tool are separate facts. A successful write can still leave a
+capability disabled by another source. Unsupported controls remain in the
+tool's own settings.
 
 ## Something is missing?
 

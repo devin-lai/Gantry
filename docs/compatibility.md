@@ -1,7 +1,7 @@
 # Supported tools and measurement limits
 
 Gantry is a native macOS application for **macOS 13 or later**, with a universal
-Apple silicon and Intel binary. The following describes the 1.1.0 reader
+Apple silicon and Intel binary. The following describes the 1.2.0 reader
 families, not a promise that every future agent release uses the same formats.
 
 | Tool | Local records Gantry understands | Main limits |
@@ -24,8 +24,25 @@ Codex approval prompts and questions are not presented as a Waiting state.
 Codex. Claude Code permission-decision counts require records from 2.1.294 or
 later. Command review describes recorded tool inputs; it does not establish
 what a command changed or provide a security verdict. Older or large Codex
-rollouts may be read only from their tail, leaving endings, commands, and
-compaction usage unavailable. Gantry labels those gaps.
+rollouts may initially be read only from their tail. **Load session details**
+can recover more of a selected local conversation, with progress, cancellation,
+retry, and persistent caching. Missing, unsupported, malformed, changing, or
+over-limit records can remain incomplete; Gantry labels those gaps.
+
+**Changed files and handoff** use recorded edit tools from Claude Code, Codex,
+Cursor, and Antigravity where supported. They do not capture all shell-command
+side effects. Git status is a read-only observation of the checkout now, not
+proof of who made a change. A handoff note uses recorded content, labels cuts,
+and may contain private text or paths. A resume command is offered only where
+supported; Cursor desktop conversations have no terminal resume command.
+
+**Agent capabilities** resolve skills and MCP configuration for the selected
+tool and working directory. Configuration availability, Gantry's connection
+checks, and verification inside the tool are distinct. Managed policy, account
+state, launch overrides, remote environments, and dynamic providers can limit
+what local files establish. Supported configuration edits are for specific
+Claude Code and Codex controls; the app does not provide universal editors for
+every supported tool.
 
 **Quota** comes from values the agent cached locally; it can be out of date.
 Window attribution is a proxy based on recorded sessions. Providers do not
@@ -37,7 +54,8 @@ remainder unattributed; complete context-timeline accuracy is not established.
 
 **Costs** are API-rate estimates where the local usage and model can be read.
 They are not subscription invoices, charges made by Gantry, or guaranteed
-savings.
+savings. Tail-only Codex records can produce a less complete estimate than a
+full detail read.
 
 **Timing** uses recorded agent measurements or an active MCP benchmark. A slow
 server does not establish that every session is slow. HTTP benchmarking is on

@@ -10,7 +10,7 @@ body:
     id: gantry_version
     attributes:
       label: Gantry version and build
-      placeholder: "1.1.0, build 96"
+      placeholder: "1.2.0, build 119"
     validations:
       required: true
   - type: input

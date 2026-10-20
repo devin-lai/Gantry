@@ -6,17 +6,17 @@ supported coding agent with local records makes the app useful.
 
 ## Install
 
-1. Get `Gantry-1.1.0.dmg` and `SHA256SUMS.txt` from the [official 1.1.0 release](https://github.com/devin-lai/Gantry/releases/tag/v1.1.0).
+1. Get `Gantry-1.2.0.dmg` and `SHA256SUMS.txt` from the [official 1.2.0 release](https://github.com/devin-lai/Gantry/releases/tag/v1.2.0).
 2. Compare the DMG's checksum with the value in the release notes or checksum file:
 
    ```sh
-   shasum -a 256 ~/Downloads/Gantry-1.1.0.dmg
+   shasum -a 256 ~/Downloads/Gantry-1.2.0.dmg
    ```
 
 3. Open the disk image and drag Gantry into Applications.
 4. Eject the disk image and open Gantry from Applications.
 
-Gantry 1.1.0 has an ad-hoc signature and is not notarized
+Gantry 1.2.0 has an ad-hoc signature and is not notarized
 by Apple. A checksum identifies the downloaded bytes; it does not establish
 Apple's approval or the publisher's identity. If macOS blocks the app, verify
 the download and decide whether you trust it, then use **System Settings →
@@ -30,18 +30,25 @@ Privacy & Security → Open Anyway** after the attempted launch. Follow
 - Start with **Overview** for quota, context, and findings, then **Doctor** for the evidence and next steps.
 - Open **Inventory** for skills and MCP servers, **Sessions** for recorded usage, or **Live Runtime** for running processes.
 - In **Sessions**, type to filter titles and projects; press **Return** to search conversation contents. Open a result to read the passage and use **Copy resume command** where supported.
+- Review **Changed files** and current Git status, or use **Copy handoff note** to prepare for another session. Check copied notes for private content before sharing.
+- For older Codex conversations, **Load session details** can recover recorded endings, edits, and commands, with progress and cancellation.
+- Open **Agents** and select a tool and working directory to inspect capabilities for that context.
 - Use **⌘K** to jump, **⌘R** to refresh, and **⌘Z** to undo the last supported file change.
 
 Missing records or unsupported measurements are expected for some tools. Check
 [coverage](compatibility.md) before interpreting an empty view as a problem.
-For a concrete place to start, [choose one of four workflows](workflows.md).
+For a concrete place to start, [choose one of six workflows](workflows.md).
 
 ## Updates
 
-Gantry 1.1.0 does not check a remote update feed. Watch the repository's **Releases**
+Gantry 1.2.0 does not check a remote update feed. Watch the repository's **Releases**
 notifications and replace the app manually when a newer published build is
 available. Ad-hoc builds may ask for protected-folder access again after an
 update.
+
+To upgrade from 1.1, quit Gantry, open the 1.2.0 DMG, and replace Gantry in
+Applications. Keep Gantry's Application Support folder if you want to retain
+its index and edit backups. [Read what's new in 1.2.0.](releases/1.2.0.md)
 
 ## Report a problem
 

@@ -1,86 +1,81 @@
 <div align="center">
   <img src="assets/gantry-icon.png" width="96" alt="Gantry 的青绿色章鱼吉祥物">
   <h1>Gantry</h1>
-  <p><strong>看清配额，理解上下文，检查你的 AI 编程配置。</strong></p>
-  <p>面向 <strong>Claude Code、Codex 及其他 AI 编程工具</strong>的原生 macOS 仪表盘。</p>
-  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v1.1.0/Gantry-1.1.0.dmg"><strong>下载 Gantry 1.1.0</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.1.0">发布说明与校验值</a></p>
-  <p><strong>macOS 13+ · Apple 芯片与 Intel · 个人非商业用途免费</strong></p>
+  <p><strong>看清 AI 改了什么，从上次停下的地方继续。</strong></p>
+  <p>面向 <strong>Claude Code、Codex、Cursor 等工具</strong>的本地 AI 编程工作台。<br>找回对话、审查文件变化、查看配额、理清配置。</p>
+  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v1.2.0/Gantry-1.2.0.dmg"><strong>下载 Gantry 1.2.0</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.2.0">发布说明与校验值</a></p>
+  <p><strong>原生 macOS · macOS 13+ · Apple 芯片与 Intel<br>个人非商业用途免费 · 无需 Gantry 账户 · 无分析遥测</strong></p>
   <p>此版本采用 ad-hoc 签名，<strong>未经 Apple 公证</strong>。应用源代码保持私有。</p>
   <p><a href="README.md">English</a> · <strong>简体中文</strong></p>
 </div>
 
-![Gantry 总览：配额、配置问题、实时会话与上下文信息](assets/overview-dark.png)
+![Gantry 总览：本地配额、活跃会话、配置问题与上下文信息](assets/overview-dark.png)
 
-*截图使用合成演示数据。数字仅用于展示界面；界面和可用测量项会随版本及工具而变化。此文档提供中文介绍，不代表应用界面已支持中文。*
+*截图使用合成演示数据，可能展示较早版本的界面。各工具可用的测量项不同。中文介绍不代表应用界面已支持中文。*
+
+## 1.2 新增：从找回对话，到继续工作
+
+代理停下后，先看清发生了什么，再决定下一步。
+
+- **看清文件变化：** 查看编辑工具记录的新增、修改、删除和移动，跳回相关对话，并检查文件当前的 Git 状态。通过筛选找到仍有未提交修改的会话。
+- **带着上下文继续：** 使用 **Copy handoff note** 复制包含已记录提示词、回复、文件变化、待复查命令及可用恢复命令的交接说明。Overview 也更方便返回最近对话。
+- **读取旧 Codex 会话的更多详情：** 在支持的会话上选择 **Load session details**，查看进度、取消或重试；读取结果保存在本地。
+- **按工具与项目理解配置：** 在 **Agents** 或 **Inventory** 选择工具和工作目录，追溯技能、插件与 MCP 的来源；MCP 诊断说明检查在哪个阶段失败。
+- **更明确地审查配置修改：** 支持的 Claude Code 和 Codex 修改展示范围与目标，先预览、备份，再写入并重新读取结果；撤销会检查是否已有后续编辑。
+
+本次更新还带来更柔和的浅色与深色界面、更清晰的搜索，以及会话解析、缓存、费用估算、配置写入和凭据遮蔽等方面的修复。[完整发布说明（英文）→](docs/releases/1.2.0.md)
 
 ## Gantry 能帮你看清什么
 
-**1.1 新增：** 搜索历史对话并返回相关项目，查看会话停止的记录原因、值得复查的命令、重试与上下文压缩；Claude Code 和 Codex 支持 Working / Ready 状态，Claude Code 还可显示等待权限确认的状态与可选通知。新增 Cursor 桌面对话历史，并以 Antigravity 替换 Gemini CLI。[完整更新说明（英文）](docs/releases/1.1.0.md)。
-
-会话日志、指令文件、技能、钩子和 MCP 服务器分散在不同位置。Gantry 将本地证据汇集到一个工作区，帮助你判断哪些配置值得关注，以及是否需要修改。
-
 | 你关心的问题 | Gantry 提供的信息 |
 | --- | --- |
-| **配额快用完了吗？** | Claude Code 和 Codex 的本地缓存配额窗口、重置时间、数据新鲜度与使用节奏，以及菜单栏视图。 |
-| **第一条提示词之前加载了什么？** | 指令、规则、技能、代理定义和 MCP 工具描述的清单与 token 估算；工具有记录时，也能查看启动上下文测量值。 |
-| **MCP 或钩子为什么慢？** | MCP 初始化和工具列表获取耗时，以及编程工具记录的 API、工具和钩子耗时。 |
-| **配置问题该怎么处理？** | Doctor 按优先级展示发现、证据和下一步；支持的文件修改可以先预览，再应用，并保留本地备份以便撤销。 |
+| **上次做到哪里了？** | 可搜索的对话、记录中的停止原因、文件变化、当前 Git 状态和可复制的交接说明。 |
+| **配额还剩多少？** | Claude Code 和 Codex 的本地缓存配额、重置时间、数据新鲜度与菜单栏视图。 |
+| **第一条提示词前加载了什么？** | 指令、规则、技能、代理定义和 MCP 工具描述，以及可用的 token 估算与上下文记录。 |
+| **MCP 为什么失败？** | Gantry 检查中的配置、可执行文件、工作目录、环境、初始化和工具列表结果。 |
+| **应该改哪项配置？** | Doctor 发现与证据、支持的修改预览、本地备份和撤销。 |
 
-支持的工具包括 **Claude Code、Codex、Cursor、Antigravity、OpenCode 和 Copilot CLI**。只用其中一种也可以，无需迁移工作流或注册 Gantry 账户。
+支持 **Claude Code、Codex、Cursor、Antigravity、OpenCode 和 Copilot CLI**。只用其中一种也可以，无需迁移工作流。
 
-**各工具覆盖范围不同。** 配额覆盖适用于 Claude Code 和 Codex；Cursor 支持桌面对话历史、搜索与配置清单，用量、费用与配额不可用。其他工具也不宣称具备配额覆盖。[完整兼容性与限制（英文）](docs/compatibility.md)。
+**各工具覆盖范围不同。** 配额适用于 Claude Code 和 Codex；Cursor 支持桌面对话历史、搜索与配置清单，用量、费用与配额不可用。配置可用或 Gantry 检查成功，不代表代理已经加载或批准该能力。[兼容性与限制（英文）](docs/compatibility.md)
 
-## 从一个问题开始
+## 从最近的一次会话开始
 
-1. **查看配额：** 打开 **Overview**，同时检查剩余量、重置时间和数据新鲜度。
-2. **理解上下文：** 打开 **Inventory**，查看项目和工具配置中的指令、技能及 MCP 条目。
-3. **检查 MCP：** 先看已有耗时证据；只有在你希望运行已配置服务器时，再选择主动基准测试。
-4. **审查配置问题：** 打开 **Doctor**，阅读证据，并在应用支持的文件修改前检查预览。
+1. 安装 Gantry，阅读欢迎界面并选择 MCP 基准测试偏好。
+2. 打开 **Sessions**，选择最近的对话；输入文字筛选标题与项目，按 **Return** 搜索对话内容。
+3. 查看停止记录、文件变化和 Git 状态；按需使用 **Load session details**、**Copy handoff note** 或 **Copy resume command**。
 
-[四个具体工作流（英文）→](docs/workflows.md)
+配置问题从 **Agents** 开始，配额从 **Overview** 开始。**⌘K** 快速跳转，**⌘F** 定位 Sessions 搜索，**⌘R** 刷新，**⌘Z** 撤销支持的文件修改。
 
-支持的文件修改会创建本地备份，可在应用内或用 **⌘Z** 撤销。删除文件使用废纸篓；停止进程的恢复方式不同，不能一概视为可以用 ⌘Z 撤销的文件修改。
+[六个实用工作流（英文）→](docs/workflows.md)
 
-<details>
-  <summary><strong>查看 Doctor 界面</strong></summary>
+## 本地记录，由你选择操作
 
-![Gantry Doctor：技能、MCP 服务器和钩子的配置发现](assets/doctor-light.png)
+索引与修改备份保存在你的 Mac 上。Gantry 无需账户、不含分析遥测，也不会把会话历史上传到 Gantry 服务。Git 检查只读，不会提交或修改仓库。
 
-*合成演示数据；实际发现取决于配置与版本。*
+MCP 检查可能启动已配置的服务器或访问选定的 HTTP 端点；服务器可以使用自身凭据并发起网络请求。你可以选择是否开启自动 stdio 基准测试。交接说明在点击复制后进入剪贴板，分享前请检查其中的私有内容。
 
-</details>
-
-**Projects** 和 **Sessions** 展示记录中的用量及按 API 价格计算的费用估算；**Live Runtime** 展示代理与 MCP 进程的 CPU 和内存。**⌘K** 快速跳转，**⌘R** 刷新工作区。
-
-## 本地数据与隐私
-
-Gantry 的索引和修改备份保存在你的 Mac 上。它**不要求 Gantry 账户，不含分析遥测**，也不会将会话历史上传到 Gantry 服务。
-
-MCP 基准测试属于主动操作：它可能启动已配置的服务器，或访问你选择的 HTTP 端点。服务器可以使用自身配置中的凭据并发起网络请求。欢迎界面或 Settings 中可选择是否启用自动 stdio 基准测试。[隐私说明（英文）](PRIVACY.md) · [1.1.0 下载文件审计（英文）](docs/1.1.0-audit.md)。
+[隐私说明（英文）](PRIVACY.md) · [1.2.0 文件审计（英文）](docs/1.2.0-audit.md)
 
 ## 下载与首次启动
 
-1. 从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v1.1.0)下载 `Gantry-1.1.0.dmg` 和 `SHA256SUMS.txt`，核对 SHA-256。
-2. 打开 DMG，将 **Gantry** 拖入 **Applications**。
-3. 打开应用，阅读欢迎界面，并选择 MCP 基准测试偏好。
+从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v1.2.0)下载 `Gantry-1.2.0.dmg` 和 `SHA256SUMS.txt`，核对 SHA-256 后打开 DMG，将 **Gantry** 拖入 **Applications**。
 
-要求 **macOS 13 Ventura 或更新版本**，支持 Apple 芯片和 Intel。Gantry 1.1.0 采用 ad-hoc 签名，**未经 Apple 公证**。如果 macOS 阻止首次启动，请在核对下载文件并决定信任它后，按[安装说明（英文）](docs/getting-started.md)操作。校验值用于确认文件内容，不代表 Apple 认可或发布者身份认证。
+要求 **macOS 13 Ventura 或更新版本**，支持 Apple 芯片和 Intel。此版本采用 ad-hoc 签名，**未经 Apple 公证**。如果 macOS 阻止首次启动，请在核对文件并决定信任下载后，按[安装说明（英文）](docs/getting-started.md)操作。校验值用于确认文件内容，不代表 Apple 认可或发布者身份认证。
 
-此版本没有内置更新源。可在仓库中选择 **Watch → Custom → Releases**，接收新版本通知。
+此版本没有内置更新源。在仓库中选择 **Watch → Custom → Releases** 可接收新版本通知。
 
 ## 正确理解数据
 
-- 配额来自工具保存在本地的缓存，可能过时，不能替代服务商的用量页面。
-- 费用是按 API 价格计算的估算值，不是订阅账单。上下文组成可能是估算，部分用量也可能无法归因。
-- 数据缺失或不完整会限制显示内容。Gantry 不保证降低费用、加快模型响应或提高回答质量。
+配额是本地缓存，可能过时；费用按 API 价格估算，不是订阅账单。上下文可能包含估算或无法归因的部分。文件变化来自支持的编辑工具，不涵盖所有 shell 命令的副作用，也不能确定修改归谁所有。缺失或不可读的记录会限制结果。
 
 [常见问题（英文）](docs/faq.md) · [兼容性（英文）](docs/compatibility.md)
 
 ## 帮助更多用户发现 Gantry
 
-如果 Gantry 对你有用，欢迎 **Star 仓库**，并将[官方仓库链接](https://github.com/devin-lai/Gantry)分享给使用相关编程工具的人。请分享官方链接，不要重新托管应用文件。[简短分享文案](docs/share.md)。
+如果 Gantry 帮你更顺畅地继续工作，欢迎 **Star 仓库**，并[分享官方链接](docs/share.md)。也欢迎[报告问题](https://github.com/devin-lai/Gantry/issues/new?template=bug_report.yml)、[提出工作流建议](https://github.com/devin-lai/Gantry/issues/new?template=feature_request.yml)或改进翻译。
 
-[报告问题](https://github.com/devin-lai/Gantry/issues/new?template=bug_report.yml)、[提出工作流建议](https://github.com/devin-lai/Gantry/issues/new?template=feature_request.yml)或改进文档与翻译都很有帮助。公开提交前，请移除密钥、账户标识、私有路径和机密提示词，不要附上完整会话记录。敏感安全问题请按 [SECURITY.md](SECURITY.md) 私下报告。
+公开提交前，请移除凭据、私有路径和机密提示词。敏感安全问题请按 [SECURITY.md](SECURITY.md) 私下报告。[贡献说明](CONTRIBUTING.md)
 
 ## 许可
 

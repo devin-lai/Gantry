@@ -56,9 +56,27 @@ rules can all produce differences.
 
 ### Why does macOS block the download?
 
-Gantry 1.1.0 is ad-hoc signed and not notarized by Apple.
+Gantry 1.2.0 is ad-hoc signed and not notarized by Apple.
 See the [installation guide](getting-started.md) for verification and first-launch
 steps. Do not interpret a checksum as notarization.
+
+### Does a handoff note use another model?
+
+No. It assembles recorded session content, labels its sources and cuts, and
+copies the result when you ask. It does not generate a new model summary.
+Review the note for private content before sharing it.
+
+### Does Gantry commit my files or resume an agent automatically?
+
+Git checks are read-only. Copying a resume command or handoff note does not
+execute it. You decide where and how to continue.
+
+### Why are details missing from an older Codex session?
+
+Some sessions are initially indexed from only part of the local rollout.
+Use **Load session details** where offered. Files that are missing,
+unsupported, malformed, changing, or over the read limits may still be
+incomplete. See [compatibility](compatibility.md).
 
 ### Can I help without access to the source?
 

@@ -1,110 +1,112 @@
 <div align="center">
   <img src="assets/gantry-icon.png" width="96" alt="Gantry's teal octopus mascot">
   <h1>Gantry</h1>
-  <p><strong>Know your quota. Understand your context. Fix your setup.</strong></p>
-  <p>A native macOS dashboard for <strong>Claude Code, Codex, and your other AI coding tools</strong>.</p>
+  <p><strong>Know what your AI agents changed. Pick up where they left off.</strong></p>
+  <p>Your local AI coding workspace for <strong>Claude Code, Codex, Cursor, and more</strong>.<br>Find conversations, review changed files, watch quota, and untangle your setup.</p>
   <p>
-    <a href="https://github.com/devin-lai/Gantry/releases/download/v1.1.0/Gantry-1.1.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v1.1.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 1.1.0 for macOS"></a>
+    <a href="https://github.com/devin-lai/Gantry/releases/download/v1.2.0/Gantry-1.2.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v1.2.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 1.2.0 for macOS"></a>
   </p>
-  <p><strong>macOS 13+ · Apple silicon &amp; Intel · Free for personal, non-commercial use</strong></p>
-  <p>This release is ad-hoc signed and <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">Read the first-launch instructions.</a></p>
+  <p><strong>Native macOS · Apple silicon &amp; Intel · macOS 13+<br>Free for personal, non-commercial use · No Gantry account · No analytics telemetry</strong></p>
+  <p>Ad-hoc signed; <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">First-launch instructions</a> · Application source is private.</p>
   <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p>
+    <a href="#new-in-12-from-conversation-to-continuation">What's new</a> ·
     <a href="#why-gantry">Why Gantry</a> ·
-    <a href="#choose-your-first-workflow">Try a workflow</a> ·
+    <a href="docs/workflows.md">Try a workflow</a> ·
     <a href="docs/compatibility.md">Supported tools</a> ·
-    <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.1.0">What's new in 1.1</a> ·
     <a href="https://github.com/devin-lai/Gantry/issues/new/choose">Feedback</a>
   </p>
 </div>
 
-![Gantry Overview: quota runway, setup findings, live sessions, and context insights](assets/overview-dark.png)
+![Gantry Overview: local quota readings, active sessions, setup findings, and context insights](assets/overview-dark.png)
 
-*Screenshots use synthetic demo data. Numbers illustrate the interface; appearance and available measurements vary by build and agent.*
+*Screenshots use synthetic demo data and may show an earlier interface. Measurements and features vary by tool.*
 
-## New in 1.1: pick up where your agents left off
+## New in 1.2: from conversation to continuation
 
-Find an earlier conversation, see why a session stopped, and catch the moment your agent needs you. **Gantry 1.1** adds conversation search and easier navigation back to your work, live Working / Ready states for Claude Code and Codex, and Claude Code permission-wait notices. Session details now explain recorded interruptions, permission decisions, commands worth reviewing, retries, and compactions.
+An agent stops. A project is half finished. The next useful step starts with knowing what happened.
 
-**Cursor desktop conversation history** joins the workspace, and **Antigravity** replaces Gemini CLI with local conversation and configuration support. [Explore the changes →](docs/releases/1.1.0.md)
+- **See what changed.** Review files recorded by agent edit tools, jump to the supporting conversation, and check their current Git status. Find sessions with uncommitted edits.
+- **Carry the work forward.** Copy a handoff note with recorded prompts, replies, changed files, commands to review, and a resume command where available. Recent conversations are easier to reach from Overview.
+- **Recover older Codex details.** Choose **Load session details** for a selected older or large conversation, with progress, cancellation, and retry.
+- **Understand the setup for this project.** Choose a tool and working directory in **Agents** or **Inventory**. Follow skills, plugins, and MCP capabilities to their configuration sources; diagnose an MCP check by the stage that failed.
+- **Make a change you can inspect.** Supported Claude Code and Codex settings show scope and affected configuration before writing, then re-read the result. Backups and guarded Undo help you recover.
+
+A quieter light and dark interface, clearer search, and fixes across session parsing, usage estimates, configuration writes, and credential masking round out the release.
+
+[Read the 1.2.0 release notes →](docs/releases/1.2.0.md)
 
 ## Why Gantry
 
-Your coding setup is spread across session logs, instruction files, skills, hooks, and MCP servers. Gantry brings that local evidence into one workspace so you can see what needs attention and decide what to change.
+Your coding tools already keep useful evidence on your Mac. Gantry brings the scattered conversations, instructions, skills, hooks, and MCP configuration into one place.
 
-Use Gantry alongside **Claude Code · Codex · Cursor · Antigravity · OpenCode · Copilot CLI**. Start with one agent; no migration or Gantry account is needed. **Coverage differs:** quota is available for Claude Code and Codex; Cursor includes searchable desktop conversations and configuration inventory, with usage, cost, and quota unavailable. [See the complete coverage table.](docs/compatibility.md)
-
-| When this happens… | Open Gantry to… |
+| Your question | What Gantry brings into view |
 | --- | --- |
-| **“I'm close to my limit.”** | See cached Claude Code and Codex quota windows, reset times, freshness, and pace. Keep a compact view in the menu bar. |
-| **“What loads before I even type?”** | Inspect instructions, rules, skills, agent definitions, and MCP schemas, with token estimates and recorded startup context where available. |
-| **“Something in my setup feels slow.”** | Inspect MCP startup and tool-list timings, plus recorded API, tool, and hook time. |
-| **“Which configuration should I change?”** | Follow Doctor findings to the evidence, preview supported file edits, and keep a local backup for Undo. |
+| **“Where did I leave off?”** | Searchable conversations, recorded endings, changed files, current Git state, and copyable handoff notes. |
+| **“How much quota is left?”** | Cached Claude Code and Codex quota windows, reset times, freshness, and pace, including a menu bar view. |
+| **“What loads before my first prompt?”** | Instructions, rules, skills, agent definitions, and MCP schemas, with estimates and recorded context where available. |
+| **“Why is this MCP server failing?”** | Configuration, executable, working-directory, environment, initialization, and tool-list outcomes from Gantry's checks. |
+| **“What should I change?”** | Doctor findings linked to evidence, previews for supported file edits, local backups, and Undo. |
 
-## Choose your first workflow
+Use Gantry alongside **Claude Code · Codex · Cursor · Antigravity · OpenCode · Copilot CLI**. Start with one tool; keep your existing workflow.
 
-After [installing](docs/getting-started.md), pick the question that brought you here:
+**Coverage varies.** Quota is available for Claude Code and Codex. Cursor supports desktop conversation history, search, and configuration inventory; its usage, cost, and quota are unavailable. A configuration marked available is not proof that an agent loaded it. [See coverage and limits.](docs/compatibility.md)
 
-| Start here | What to try |
-| --- | --- |
-| **Check quota runway** | Open **Overview** and check the quota source's freshness before planning your next session. |
-| **Understand startup context** | Open **Inventory** to inspect what your project and agent configuration contribute. |
-| **Investigate a slow MCP server** | Inspect available timing evidence; choose an active benchmark only if you want to run the configured server. |
-| **Review one setup finding** | Open **Doctor**, inspect the evidence, and preview a supported change before applying it. |
+## Try it with a recent session
 
-[Walk through these four workflows →](docs/workflows.md)
+1. [Download and install Gantry](docs/getting-started.md). Read the welcome screen and choose your MCP benchmarking preference.
+2. Open **Sessions** and select a recent conversation. Type to filter titles and projects; press **Return** to search conversation content.
+3. Review the recorded ending and changed files. Where offered, use **Load session details**, **Copy handoff note**, or **Copy resume command**.
 
-## Inspect. Preview. Undo.
+For configuration work, start with **Agents** and choose the tool and project you care about. For quota, start with **Overview**.
 
-Gantry's Doctor connects a finding to the evidence and a next step. Supported file edits show the exact change and create a backup before writing. Undo is available in the app and with **⌘Z**. Removing a file uses the Trash; stopping a process has its own recovery limits.
+**⌘K** jumps to an item · **⌘F** finds search in Sessions · **⌘R** refreshes · **⌘Z** undoes a supported file edit.
+
+[Explore six practical workflows →](docs/workflows.md)
 
 <details>
-  <summary><strong>See Doctor in action</strong> — skills, MCP servers, and hooks</summary>
+  <summary><strong>See Doctor in action</strong> — inspect the evidence before changing your setup</summary>
 
-![Gantry Doctor: prioritized findings for skills, MCP servers, and hooks](assets/doctor-light.png)
+![Gantry Doctor: prioritized configuration findings for skills, MCP servers, and hooks](assets/doctor-light.png)
 
-*Synthetic demo data; available findings depend on your configuration and build.*
+*Synthetic demo data. Available findings depend on your setup. File removal uses the Trash; stopping a process cannot be undone with file Undo.*
 
 </details>
 
-You can also explore **Projects** and **Sessions** for recorded usage and API-rate cost estimates, or **Live Runtime** for agent and MCP processes, CPU, and memory. **⌘K** jumps to a project, session, skill, server, or section; **⌘R** refreshes the workspace.
+## Local records. Your choice of action.
 
-## Local data. No Gantry account.
+Gantry keeps its index and edit backups on your Mac. There is no Gantry account, no analytics telemetry, and no upload of session history to a Gantry service. Read-only Git checks show the current state of recorded changed files; they do not commit or modify your repository.
 
-Gantry indexes records already on your Mac and keeps its index and backups locally. It has no Gantry account or analytics telemetry. Session data is not uploaded to a Gantry service.
+MCP checks are active operations: they can launch configured servers or contact chosen HTTP endpoints. Those servers can use their own credentials and make network requests. You choose whether automatic stdio benchmarking is enabled. Handoff notes go to your clipboard when you copy them; review them before sharing.
 
-MCP benchmarking is an active operation: it can launch configured servers or contact an HTTP endpoint you choose. Those servers can use their configured credentials and make their own network requests. You choose whether automatic stdio benchmarking is enabled during welcome or in Settings. [Read the privacy details.](PRIVACY.md)
+[Privacy details](PRIVACY.md) · [Audit of the 1.2.0 download](docs/1.2.0-audit.md)
 
 ## Download and first launch
 
-**Requires macOS 13 Ventura or later, on Apple silicon or Intel.**
+[**Download Gantry-1.2.0.dmg**](https://github.com/devin-lai/Gantry/releases/download/v1.2.0/Gantry-1.2.0.dmg) · [Release notes and SHA-256](https://github.com/devin-lai/Gantry/releases/tag/v1.2.0)
 
-[Download Gantry 1.1.0](https://github.com/devin-lai/Gantry/releases/download/v1.1.0/Gantry-1.1.0.dmg) · [Release notes and checksum](https://github.com/devin-lai/Gantry/releases/tag/v1.1.0). To hear about new builds, use **Watch → Custom → Releases** on this repository. This release has no built-in update feed.
+Requires **macOS 13 Ventura or later**, on Apple silicon or Intel. Open the DMG and drag **Gantry** into **Applications**.
 
-1. Download the DMG from this repository's Releases page.
-2. Open it and drag **Gantry** into **Applications**.
-3. Open Gantry and follow the welcome screen. It detects supported local agent folders.
+This release is **ad-hoc signed and not notarized by Apple**. After checking the checksum and deciding to trust the download, follow the [first-launch instructions](docs/getting-started.md) if macOS blocks it. A checksum identifies the file; it does not authenticate its publisher.
 
-Gantry 1.1.0 is **ad-hoc signed and not notarized by Apple**. macOS may block its first launch. After verifying the release checksum and deciding to trust the download, use **System Settings → Privacy & Security → Open Anyway**. [Installation, checksum verification, and uninstall instructions.](docs/getting-started.md)
+Use **Watch → Custom → Releases** on this repository for new versions. This build has no built-in update feed.
 
 ## Know what the numbers mean
 
-- Quota readings come from local agent records. They can be stale and do not replace the provider's usage page.
-- API-rate cost is an estimate from recorded usage and pricing, not your subscription bill.
-- Context components include estimates; a timeline can leave unexplained usage unattributed.
-- When a source is missing, unreadable, or incomplete, Gantry labels the limitation. Features depend on what each agent records.
-- Gantry helps you inspect configuration; it cannot guarantee lower spending, faster models, or better answers.
+Quota readings are cached and may be stale. Costs are API-rate estimates, not subscription bills. Context components may be estimated or unattributed. Missing or unreadable records limit what Gantry can show. Changed-file lists cover recorded edit tools; they do not capture every shell-command side effect or establish who owns a change.
 
-[Supported tools and limits](docs/compatibility.md) · [Frequently asked questions](docs/faq.md) · [1.1.0 artifact audit](docs/1.1.0-audit.md)
+[Supported tools and limits](docs/compatibility.md) · [FAQ](docs/faq.md)
 
-## Help another agent user find Gantry
+## Help shape Gantry
 
-Found a bug? [Send a report](https://github.com/devin-lai/Gantry/issues/new?template=bug_report.yml). Have a workflow Gantry could improve? [Describe it](https://github.com/devin-lai/Gantry/issues/new?template=feature_request.yml). Please remove secrets, private paths, and confidential prompts from anything you share.
+[Report a bug](https://github.com/devin-lai/Gantry/issues/new?template=bug_report.yml), [suggest a workflow](https://github.com/devin-lai/Gantry/issues/new?template=feature_request.yml), or improve the documentation and translations. Remove credentials, private paths, and confidential prompts from public reports.
 
-If Gantry is useful to you, **star this repository** and share [the repository link](https://github.com/devin-lai/Gantry) with someone who uses a supported coding tool. [Short descriptions and sharing guidance](docs/share.md) make it easier to explain what it does. Documentation corrections and translations are welcome; the application source remains private. [How to contribute](CONTRIBUTING.md) · [Report a sensitive security issue privately](SECURITY.md).
+If Gantry helps you get back to work, **star this repository** so others can find it, and [share the official link](docs/share.md) with another coding-agent user.
+
+[Contributing](CONTRIBUTING.md) · [Report a security issue privately](SECURITY.md)
 
 ## License
 
-**Free for personal, non-commercial use only.** Gantry is proprietary software. This public repository hosts documentation, feedback, and binary releases; the application's source code is closed-source. Commercial, employer, and client use requires separate permission. See [LICENSE](LICENSE).
+**Free for personal, non-commercial use only.** Gantry is proprietary software. This repository hosts documentation, feedback, and binary releases; the application source is private. Commercial, employer, and client use requires separate permission. See [LICENSE](LICENSE).
 
-Gantry is an independent application and is not affiliated with the makers of the supported coding tools.
+Gantry is independent and is not affiliated with the makers of the supported coding tools.
