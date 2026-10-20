@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/devin-lai/Gantry/releases/download/v1.2.0/Gantry-1.2.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v1.2.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 1.2.0 for macOS"></a>
   </p>
-  <p><strong>Native macOS · Apple silicon &amp; Intel · macOS 13+<br>Free for personal, non-commercial use · No Gantry account · No analytics telemetry</strong></p>
-  <p>Ad-hoc signed; <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">First-launch instructions</a> · Application source is private.</p>
+  <p><strong>Native macOS · Apple silicon &amp; Intel · macOS 13+<br>Completely free, including for commercial use · No Gantry account · No analytics telemetry</strong></p>
+  <p>Ad-hoc signed; <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">First-launch instructions</a>.</p>
   <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p>
     <a href="#new-in-12-from-conversation-to-continuation">What's new</a> ·
@@ -107,6 +107,6 @@ If Gantry helps you get back to work, **star this repository** so others can fin
 
 ## License
 
-**Free for personal, non-commercial use only.** Gantry is proprietary software. This repository hosts documentation, feedback, and binary releases; the application source is private. Commercial, employer, and client use requires separate permission. See [LICENSE](LICENSE).
+**Completely free, including for commercial use.** Use Gantry for personal projects, at work, or with clients without charge or separate permission. See [LICENSE](LICENSE).
 
 Gantry is independent and is not affiliated with the makers of the supported coding tools.

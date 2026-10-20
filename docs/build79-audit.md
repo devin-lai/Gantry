@@ -26,7 +26,7 @@ personal build paths in this candidate. Apparent token substrings in compiled
 symbol names and random compressed-image bytes were reviewed as false positives.
 
 The image contains the app, an Applications shortcut, installation notes, the
-personal-use license, and privacy notes. No source files, dSYM bundles,
+license, and privacy notes. No source files, dSYM bundles,
 provisioning profiles, private keys, account databases, personal session
 transcripts, or developer configuration files are included.
 

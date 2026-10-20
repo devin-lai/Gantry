@@ -1,16 +1,15 @@
 # Frequently asked questions
 
-### Is Gantry open source?
+### Which file should I install?
 
-No. This repository contains public documentation, feedback, and binary
-releases. The application source remains private. GitHub-generated source
-archives contain this repository's documentation and artwork, not the app
-implementation. Install the DMG from a published release.
+Download the DMG from the [official release page](https://github.com/devin-lai/Gantry/releases/latest).
+Follow the [installation guide](getting-started.md) to verify it and install Gantry.
 
 ### Is it free?
 
-Official binaries are free for personal, non-commercial use. Business,
-employer, and client use requires separate permission. See [LICENSE](../LICENSE).
+**Completely free, including for commercial use.** Personal projects, business,
+employer, and client use are all permitted without charge or separate permission.
+This also applies to previously downloaded official releases. See [LICENSE](../LICENSE).
 
 ### Do I need all six agents?
 
@@ -78,8 +77,8 @@ Use **Load session details** where offered. Files that are missing,
 unsupported, malformed, changing, or over the read limits may still be
 incomplete. See [compatibility](compatibility.md).
 
-### Can I help without access to the source?
+### How can I help?
 
-Yes: describe a reproducible bug, suggest a useful workflow, or improve the
+Describe a reproducible bug, suggest a useful workflow, or improve the
 public documentation. See [CONTRIBUTING.md](../CONTRIBUTING.md). Share links to the
 official release rather than redistributing the binary.

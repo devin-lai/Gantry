@@ -4,8 +4,8 @@
   <p><strong>看清 AI 改了什么，从上次停下的地方继续。</strong></p>
   <p>面向 <strong>Claude Code、Codex、Cursor 等工具</strong>的本地 AI 编程工作台。<br>找回对话、审查文件变化、查看配额、理清配置。</p>
   <p><a href="https://github.com/devin-lai/Gantry/releases/download/v1.2.0/Gantry-1.2.0.dmg"><strong>下载 Gantry 1.2.0</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.2.0">发布说明与校验值</a></p>
-  <p><strong>原生 macOS · macOS 13+ · Apple 芯片与 Intel<br>个人非商业用途免费 · 无需 Gantry 账户 · 无分析遥测</strong></p>
-  <p>此版本采用 ad-hoc 签名，<strong>未经 Apple 公证</strong>。应用源代码保持私有。</p>
+  <p><strong>原生 macOS · macOS 13+ · Apple 芯片与 Intel<br>完全免费，包括商业用途 · 无需 Gantry 账户 · 无分析遥测</strong></p>
+  <p>此版本采用 ad-hoc 签名，<strong>未经 Apple 公证</strong>。</p>
   <p><a href="README.md">English</a> · <strong>简体中文</strong></p>
 </div>
 
@@ -79,6 +79,6 @@ MCP 检查可能启动已配置的服务器或访问选定的 HTTP 端点；服�
 
 ## 许可
 
-**仅个人非商业用途免费。** Gantry 是专有软件；此公开仓库提供文档、反馈入口和二进制发布，应用源代码保持私有。商业、雇主或客户用途需要另行获得许可。完整条款以 [LICENSE](LICENSE) 为准。
+**完全免费，包括商业用途。** 无论用于个人项目、公司工作还是客户项目，均无需付费或另行获得许可。完整条款以 [LICENSE](LICENSE) 为准。
 
 Gantry 是独立应用，与所支持编程工具的厂商没有隶属关系。
