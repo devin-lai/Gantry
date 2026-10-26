@@ -1,8 +1,11 @@
 # Supported tools and measurement limits
 
-Gantry is a native macOS application for **macOS 13 or later**, with a universal
-Apple silicon and Intel binary. The following describes the 1.2.0 reader
+Gantry is a native macOS application for **macOS 14.5 or later**, with a universal
+Apple silicon and Intel binary. The following describes the 1.3.0 reader
 families, not a promise that every future agent release uses the same formats.
+
+Version 1.3 raises the minimum from macOS 13 to **macOS 14.5 Sonoma**. Check
+your OS version before replacing an older Gantry installation.
 
 | Tool | Local records Gantry understands | Main limits |
 | --- | --- | --- |
@@ -64,6 +67,18 @@ demand; stdio benchmarking follows your welcome-screen or Settings choice.
 **Missing data** can reflect unreadable files, denied folder access, unsupported
 formats, or absent records. Gantry labels source problems and incomplete totals.
 It does not query provider accounts to fill gaps.
+
+**Project organization** uses locally recorded membership where available.
+Independent Codex conversations appear in **Sessions → No project** rather
+than becoming projects named after generated output folders. An unknown
+association remains **Project not recorded**; the working folder in Details
+does not by itself prove membership. This is local conversation coverage,
+not access to account-wide ChatGPT web history.
+
+**Accessibility on macOS 27:** a known system issue can prevent VoiceOver
+from opening the menu bar panel. Its quota and live-session information is
+also available in Gantry's main window. A complete VoiceOver qualification
+across every supported OS has not been performed.
 
 **Performance** depends on history size, the Mac, and the source format. Large
 transcripts can take longer to index or open. Cross-device performance and

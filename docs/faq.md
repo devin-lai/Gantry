@@ -16,6 +16,19 @@ This also applies to previously downloaded official releases. See [LICENSE](../L
 No. Start with one supported tool that has local records. Different agents
 expose different measurements; see [compatibility](compatibility.md).
 
+### Where did the generated Codex project folders go?
+
+Independent conversations now live in **Sessions → No project**. A shortcut
+from Projects takes you there. The conversation's actual working folder stays
+in Details; Gantry does not move or delete it to organize the list. When local
+metadata cannot establish membership, the session remains **Project not recorded**.
+
+### Can I use 1.3 on macOS 13?
+
+Version 1.3 requires **macOS 14.5 or later**. Earlier releases remain on the
+[Releases page](https://github.com/devin-lai/Gantry/releases), with their original
+requirements and limitations.
+
 ### Does it replace my coding agent?
 
 No. Gantry is a companion dashboard for inspecting local records and supported
@@ -55,7 +68,7 @@ rules can all produce differences.
 
 ### Why does macOS block the download?
 
-Gantry 1.2.0 is ad-hoc signed and not notarized by Apple.
+Gantry 1.3.0 is ad-hoc signed and not notarized by Apple.
 See the [installation guide](getting-started.md) for verification and first-launch
 steps. Do not interpret a checksum as notarization.
 

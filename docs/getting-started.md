@@ -1,22 +1,22 @@
 # Get started with Gantry
 
-Requires **macOS 13 Ventura or later**, on Apple silicon or Intel. You do not
+Requires **macOS 14.5 Sonoma or later**, on Apple silicon or Intel. You do not
 need a Gantry account or an API key to inspect local records. At least one
 supported coding agent with local records makes the app useful.
 
 ## Install
 
-1. Get `Gantry-1.2.0.dmg` and `SHA256SUMS.txt` from the [official 1.2.0 release](https://github.com/devin-lai/Gantry/releases/tag/v1.2.0).
+1. Get `Gantry-1.3.0.dmg` and `SHA256SUMS.txt` from the [official 1.3.0 release](https://github.com/devin-lai/Gantry/releases/tag/v1.3.0).
 2. Compare the DMG's checksum with the value in the release notes or checksum file:
 
    ```sh
-   shasum -a 256 ~/Downloads/Gantry-1.2.0.dmg
+   shasum -a 256 ~/Downloads/Gantry-1.3.0.dmg
    ```
 
 3. Open the disk image and drag Gantry into Applications.
 4. Eject the disk image and open Gantry from Applications.
 
-Gantry 1.2.0 has an ad-hoc signature and is not notarized
+Gantry 1.3.0 has an ad-hoc signature and is not notarized
 by Apple. A checksum identifies the downloaded bytes; it does not establish
 Apple's approval or the publisher's identity. If macOS blocks the app, verify
 the download and decide whether you trust it, then use **System Settings →
@@ -41,14 +41,14 @@ For a concrete place to start, [choose one of six workflows](workflows.md).
 
 ## Updates
 
-Gantry 1.2.0 does not check a remote update feed. Watch the repository's **Releases**
+Gantry 1.3.0 does not check a remote update feed. Watch the repository's **Releases**
 notifications and replace the app manually when a newer published build is
 available. Ad-hoc builds may ask for protected-folder access again after an
 update.
 
-To upgrade from 1.1, quit Gantry, open the 1.2.0 DMG, and replace Gantry in
+Before upgrading, check that your Mac runs macOS 14.5 or later. To upgrade from 1.2, quit Gantry, open the 1.3.0 DMG, and replace Gantry in
 Applications. Keep Gantry's Application Support folder if you want to retain
-its index and edit backups. [Read what's new in 1.2.0.](releases/1.2.0.md)
+its index and edit backups. [Read what's new in 1.3.0.](releases/1.3.0.md)
 
 ## Report a problem
 

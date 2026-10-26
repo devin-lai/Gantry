@@ -1,29 +1,34 @@
 # Share Gantry with another agent user
 
-[Repository](https://github.com/devin-lai/Gantry) · [Gantry 1.2.0](https://github.com/devin-lai/Gantry/releases/tag/v1.2.0) · [简体中文介绍](../README.zh-CN.md)
+![Gantry 1.3.0 — Less hunting. More building.](../assets/social-preview-1.3.0.png)
+
+[Repository](https://github.com/devin-lai/Gantry) · [Gantry 1.3.0](https://github.com/devin-lai/Gantry/releases/tag/v1.3.0) · [简体中文介绍](../README.zh-CN.md)
 
 Share the official repository or release link so readers get the current
 documentation, license, first-launch instructions, and checksum together.
 
 ## A short description
 
-> Know what your AI agents changed. Pick up where they left off. Gantry 1.2 brings
-> searchable conversations, changed files, handoff notes, quota, and MCP diagnostics
-> into one native macOS workspace. Completely free, including for commercial use.
+> Your AI coding work is scattered. Gantry brings it together. Find conversations,
+> inspect changed files, watch quota, and untangle MCP configuration in one native
+> Mac app. Gantry 1.3 adds clearer projects and a more focused session browser.
+> Free for personal and commercial use. macOS 14.5+.
 
 ## A little more context
 
-> If your coding setup is spread across logs, instruction files, skills, hooks,
-> and MCP servers, Gantry brings that local evidence into one workspace. It works
-> alongside Claude Code, Codex, Cursor, Antigravity, OpenCode, and Copilot CLI,
-> with different coverage by tool. The macOS 13+ release supports Apple
-> silicon and Intel. It is ad-hoc signed and not notarized by Apple; read the
-> official installation guide before the first launch.
+> Less hunting. More building. Gantry is a local workspace alongside Claude Code,
+> Codex, Cursor, Antigravity, OpenCode, and Copilot CLI. Search a conversation,
+> review its recorded changes, and copy a handoff note or resume command where
+> supported. Version 1.3 separates independent chats from real projects and
+> improves filters, small-window layouts, and everyday reliability.
+> No Gantry account or analytics telemetry. Apple silicon and Intel, macOS 14.5+.
+> Ad-hoc signed and not notarized by Apple; follow the official first-launch guide.
 
 ## 简短介绍
 
-> 看清 AI 改了什么，从上次停下的地方继续。Gantry 1.2 将可搜索的对话、文件变化、
-> 交接说明、配额和 MCP 诊断汇集到原生 macOS 工作台。完全免费，包括商业用途。
+> 找回对话，理清配置，继续构建。Gantry 1.3 把 AI 编程工具的本地对话、文件变化、
+> 配额和 MCP 诊断放到同一个原生 Mac 工作台，带来更清楚的项目组织、更顺手的会话
+> 筛选和更可靠的小窗口布局。个人与商业用途均免费，要求 macOS 14.5+。
 > 当前版本未经 Apple 公证，请先阅读安装说明。
 
 ## What to keep clear
@@ -35,7 +40,7 @@ documentation, license, first-launch instructions, and checksum together.
 - Link to the official download rather than rehosting the DMG. The [license](../LICENSE) does not grant a general reuse license for branding, artwork, or documentation.
 - Use synthetic examples when discussing a workflow. Never share private session content, credentials, account identifiers, or unredacted diagnostics.
 
-The repository's [sharing image](../assets/social-preview-1.2.0.png) is designed for
-its GitHub link preview. The [Overview](../assets/overview-dark.png) and
-[Doctor](../assets/doctor-light.png) screenshots illustrate the interface with
-synthetic data; they are not performance benchmarks or results from a customer.
+The 1.3 [Overview](../assets/overview-1.3.0-dark.png),
+[Sessions](../assets/sessions-1.3.0-light.png), and
+[Doctor](../assets/doctor-1.3.0-light.png) screenshots illustrate the interface
+with synthetic data. They are not customer records or performance benchmarks.

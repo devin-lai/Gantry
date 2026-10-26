@@ -1,16 +1,16 @@
 <div align="center">
   <img src="assets/gantry-icon.png" width="96" alt="Gantry's teal octopus mascot">
   <h1>Gantry</h1>
-  <p><strong>Know what your AI agents changed. Pick up where they left off.</strong></p>
+  <p><strong>Find the conversation. Understand the setup. Get back to building.</strong></p>
   <p>Your local AI coding workspace for <strong>Claude Code, Codex, Cursor, and more</strong>.<br>Find conversations, review changed files, watch quota, and untangle your setup.</p>
   <p>
-    <a href="https://github.com/devin-lai/Gantry/releases/download/v1.2.0/Gantry-1.2.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v1.2.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 1.2.0 for macOS"></a>
+    <a href="https://github.com/devin-lai/Gantry/releases/download/v1.3.0/Gantry-1.3.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v1.3.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 1.3.0 for macOS"></a>
   </p>
-  <p><strong>Native macOS · Apple silicon &amp; Intel · macOS 13+<br>Completely free, including for commercial use · No Gantry account · No analytics telemetry</strong></p>
+  <p><strong>Native macOS · Apple silicon &amp; Intel · macOS 14.5+<br>Completely free, including for commercial use · No Gantry account · No analytics telemetry</strong></p>
   <p>Ad-hoc signed; <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">First-launch instructions</a>.</p>
   <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p>
-    <a href="#new-in-12-from-conversation-to-continuation">What's new</a> ·
+    <a href="#new-in-13-less-hunting-more-building">What's new</a> ·
     <a href="#why-gantry">Why Gantry</a> ·
     <a href="docs/workflows.md">Try a workflow</a> ·
     <a href="docs/compatibility.md">Supported tools</a> ·
@@ -18,23 +18,20 @@
   </p>
 </div>
 
-![Gantry Overview: local quota readings, active sessions, setup findings, and context insights](assets/overview-dark.png)
+![Gantry Overview: local quota readings, active sessions, setup findings, and context insights](assets/overview-1.3.0-dark.png)
 
-*Screenshots use synthetic demo data and may show an earlier interface. Measurements and features vary by tool.*
+*Gantry 1.3.0 with synthetic demo data. Measurements and features vary by tool.*
 
-## New in 1.2: from conversation to continuation
+## New in 1.3: less hunting, more building
 
-An agent stops. A project is half finished. The next useful step starts with knowing what happened.
+The right conversation. The right project. The configuration that actually applies.
 
-- **See what changed.** Review files recorded by agent edit tools, jump to the supporting conversation, and check their current Git status. Find sessions with uncommitted edits.
-- **Carry the work forward.** Copy a handoff note with recorded prompts, replies, changed files, commands to review, and a resume command where available. Recent conversations are easier to reach from Overview.
-- **Recover older Codex details.** Choose **Load session details** for a selected older or large conversation, with progress, cancellation, and retry.
-- **Understand the setup for this project.** Choose a tool and working directory in **Agents** or **Inventory**. Follow skills, plugins, and MCP capabilities to their configuration sources; diagnose an MCP check by the stage that failed.
-- **Make a change you can inspect.** Supported Claude Code and Codex settings show scope and affected configuration before writing, then re-read the result. Backups and guarded Undo help you recover.
+- **Projects that look like projects.** Independent Codex conversations stay in **Sessions → No project**, instead of filling Projects with generated folder names. Their working folders remain available in Details.
+- **A session browser you can shape.** Filter by day, choose your columns, search recorded conversations, and keep the selected session in view while you inspect it.
+- **A better fit on your Mac.** Wrapping inventory controls, consistent light and dark layouts, and inspectors that work at the minimum window size. Fixes address narrow-window crashes and keyboard focus on macOS 27.
+- **Everyday details, repaired.** Search MCP endpoints and every shared skill path. Cleanup checks for changes since preview; quota warnings stay current after permission delays; model-price matching avoids false estimates.
 
-A quieter light and dark interface, clearer search, and fixes across session parsing, usage estimates, configuration writes, and credential masking round out the release.
-
-[Read the 1.2.0 release notes →](docs/releases/1.2.0.md)
+**1.3 requires macOS 14.5 or later.** [Read the release notes →](docs/releases/1.3.0.md)
 
 ## Why Gantry
 
@@ -67,7 +64,7 @@ For configuration work, start with **Agents** and choose the tool and project yo
 <details>
   <summary><strong>See Doctor in action</strong> — inspect the evidence before changing your setup</summary>
 
-![Gantry Doctor: prioritized configuration findings for skills, MCP servers, and hooks](assets/doctor-light.png)
+![Gantry Doctor: prioritized configuration findings for skills, MCP servers, and hooks](assets/doctor-1.3.0-light.png)
 
 *Synthetic demo data. Available findings depend on your setup. File removal uses the Trash; stopping a process cannot be undone with file Undo.*
 
@@ -79,13 +76,13 @@ Gantry keeps its index and edit backups on your Mac. There is no Gantry account,
 
 MCP checks are active operations: they can launch configured servers or contact chosen HTTP endpoints. Those servers can use their own credentials and make network requests. You choose whether automatic stdio benchmarking is enabled. Handoff notes go to your clipboard when you copy them; review them before sharing.
 
-[Privacy details](PRIVACY.md) · [Audit of the 1.2.0 download](docs/1.2.0-audit.md)
+[Privacy details](PRIVACY.md) · [Audit of the 1.3.0 download](docs/1.3.0-audit.md)
 
 ## Download and first launch
 
-[**Download Gantry-1.2.0.dmg**](https://github.com/devin-lai/Gantry/releases/download/v1.2.0/Gantry-1.2.0.dmg) · [Release notes and SHA-256](https://github.com/devin-lai/Gantry/releases/tag/v1.2.0)
+[**Download Gantry-1.3.0.dmg**](https://github.com/devin-lai/Gantry/releases/download/v1.3.0/Gantry-1.3.0.dmg) · [Release notes and SHA-256](https://github.com/devin-lai/Gantry/releases/tag/v1.3.0)
 
-Requires **macOS 13 Ventura or later**, on Apple silicon or Intel. Open the DMG and drag **Gantry** into **Applications**.
+Requires **macOS 14.5 Sonoma or later**, on Apple silicon or Intel. Open the DMG and drag **Gantry** into **Applications**.
 
 This release is **ad-hoc signed and not notarized by Apple**. After checking the checksum and deciding to trust the download, follow the [first-launch instructions](docs/getting-started.md) if macOS blocks it. A checksum identifies the file; it does not authenticate its publisher.
 
@@ -108,5 +105,7 @@ If Gantry helps you get back to work, **star this repository** so others can fin
 ## License
 
 **Completely free, including for commercial use.** Use Gantry for personal projects, at work, or with clients without charge or separate permission. See [LICENSE](LICENSE).
+
+This public repository contains downloads, documentation, and release assets. The Gantry application source remains closed-source.
 
 Gantry is independent and is not affiliated with the makers of the supported coding tools.

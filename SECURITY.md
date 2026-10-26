@@ -15,5 +15,5 @@ private paths.
 
 Releases are distributed through this repository's Releases page. Check the
 published SHA-256 before opening a download. A checksum verifies bytes, not
-notarization or publisher identity. Gantry 1.2.0 is ad-hoc
+notarization or publisher identity. Gantry 1.3.0 is ad-hoc
 signed and not notarized by Apple.

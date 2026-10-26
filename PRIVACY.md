@@ -44,7 +44,7 @@ commands, and paths; review it before pasting into another app or service.
 
 ## Updates and reports
 
-Gantry 1.2.0 has no built-in update-feed address, so its Check for Updates action
+Gantry 1.3.0 has no built-in update-feed address, so its Check for Updates action
 makes no update request. Download future builds from the official Releases page.
 Opening provider help or usage links opens that provider's website in a browser.
 
