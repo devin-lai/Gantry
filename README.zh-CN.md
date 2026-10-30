@@ -72,6 +72,8 @@ MCP 检查可能启动已配置的服务器或访问选定的 HTTP 端点；服�
 
 ## 帮助更多用户发现 Gantry
 
+欢迎在 Discussions [提问](https://github.com/devin-lai/Gantry/discussions/categories/q-a)或[分享想法](https://github.com/devin-lai/Gantry/discussions/categories/ideas)。维护者争取每周回复问题、查看建议，但不保证响应时间。[反馈入口](https://github.com/devin-lai/Gantry/issues/new/choose)提供讨论区和问题表单。
+
 如果 Gantry 帮你更顺畅地继续工作，欢迎 **Star 仓库**，并[分享官方链接](docs/share.md)。也欢迎[报告问题](https://github.com/devin-lai/Gantry/issues/new?template=bug_report.yml)、[提出工作流建议](https://github.com/devin-lai/Gantry/issues/new?template=feature_request.yml)或改进翻译。
 
 公开提交前，请移除凭据、私有路径和机密提示词。敏感安全问题请按 [SECURITY.md](SECURITY.md) 私下报告。[贡献说明](CONTRIBUTING.md)

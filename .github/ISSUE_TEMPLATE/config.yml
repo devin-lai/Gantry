@@ -1,5 +1,11 @@
 blank_issues_enabled: true
 contact_links:
+  - name: Ask a question
+    url: https://github.com/devin-lai/Gantry/discussions/categories/q-a
+    about: Get help with Gantry. Replies are weekly, on a best-effort basis.
+  - name: Share an idea
+    url: https://github.com/devin-lai/Gantry/discussions/categories/ideas
+    about: Discuss a workflow or improvement before turning it into a feature request.
   - name: Find your first workflow
     url: https://github.com/devin-lai/Gantry/blob/main/docs/workflows.md
     about: Start with quota, startup context, MCP diagnostics, or a Doctor finding.

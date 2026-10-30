@@ -96,6 +96,12 @@ Quota readings are cached and may be stale. Costs are API-rate estimates, not su
 
 ## Help shape Gantry
 
+[Ask a question](https://github.com/devin-lai/Gantry/discussions/categories/q-a) or
+[share an idea](https://github.com/devin-lai/Gantry/discussions/categories/ideas).
+The maintainer aims to answer questions and review ideas weekly, on a best-effort
+basis; there is no guaranteed response time. Use [Feedback](https://github.com/devin-lai/Gantry/issues/new/choose)
+to choose between discussions and issue forms.
+
 [Report a bug](https://github.com/devin-lai/Gantry/issues/new?template=bug_report.yml), [suggest a workflow](https://github.com/devin-lai/Gantry/issues/new?template=feature_request.yml), or improve the documentation and translations. Remove credentials, private paths, and confidential prompts from public reports.
 
 If Gantry helps you get back to work, **star this repository** so others can find it, and [share the official link](docs/share.md) with another coding-agent user.

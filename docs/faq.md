@@ -92,6 +92,25 @@ incomplete. See [compatibility](compatibility.md).
 
 ### How can I help?
 
+For help using Gantry, [ask in Q&A](https://github.com/devin-lai/Gantry/discussions/categories/q-a).
+For suggestions, [share an idea](https://github.com/devin-lai/Gantry/discussions/categories/ideas).
+The maintainer aims to respond weekly, on a best-effort basis; there is no
+guaranteed response time. Useful answered questions are added here with links.
+
 Describe a reproducible bug, suggest a useful workflow, or improve the
 public documentation. See [CONTRIBUTING.md](../CONTRIBUTING.md). Share links to the
 official release rather than redistributing the binary.
+
+### What happens if the update feed is offline or the repository moves?
+
+Installed copies keep working with their local records and configuration. Gantry
+does not require a Gantry account, license server, or a successful update check
+to open or use its local features. If the feed address becomes unavailable,
+update checks stop finding new builds; they do not disable the app. An old issue
+or discussion link may also stop working if the repository moves.
+
+Copies built with an update feed check only when you ask, or after you explicitly
+enable weekly checks. Failed automatic attempts are spaced by a week. Copies
+without a feed make no update request. Gantry never downloads or installs updates
+automatically. Features that contact an agent's own services, such as an MCP
+benchmark, still depend on those services.
