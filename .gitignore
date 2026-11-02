@@ -1,6 +1,6 @@
-# Public repository: documentation and artwork only.
-# Distribute audited binaries as GitHub Release assets.
+# Public repository: documentation, artwork, and the explicitly approved release image.
 *.dmg
+!Gantry-1.3.2.dmg
 *.dSYM
 *.dSYM.zip
 *.xcarchive

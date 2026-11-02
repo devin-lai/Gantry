@@ -14,7 +14,7 @@ These records can include prompts, local paths, usage counters, instructions,
 and MCP configuration. Treat them as private.
 
 Gantry keeps its index and backups in `~/Library/Application Support/Gantry`.
-Preferences are stored in `~/Library/Preferences/ai.branovo.gantry.plist`.
+Preferences are stored in `~/Library/Preferences/github.devin-lai.gantry.plist`.
 macOS may ask for access to Desktop, Documents, or Downloads when recorded
 projects are located there. Some measurements may be incomplete if access is
 denied.
@@ -44,8 +44,10 @@ commands, and paths; review it before pasting into another app or service.
 
 ## Updates and reports
 
-Gantry 1.3.0 has no built-in update-feed address, so its Check for Updates action
-makes no update request. Download future builds from the official Releases page.
+Gantry 1.3.2 checks its update feed on `raw.githubusercontent.com` when you
+request a check, or weekly only after you opt in. The request carries no Gantry
+version, identifier, or cookie; GitHub can receive ordinary connection information,
+including your IP address. Gantry does not automatically download or install updates.
 Opening provider help or usage links opens that provider's website in a browser.
 
 Diagnostic reports are generated locally. Gantry does not submit them for you.

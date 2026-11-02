@@ -3,26 +3,26 @@
   <h1>Gantry</h1>
   <p><strong>找回对话，理清配置，继续构建。</strong></p>
   <p>面向 <strong>Claude Code、Codex、Cursor 等工具</strong>的本地 AI 编程工作台。<br>找回对话、审查文件变化、查看配额、理清配置。</p>
-  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v1.3.0/Gantry-1.3.0.dmg"><strong>下载 Gantry 1.3.0</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.3.0">发布说明与校验值</a></p>
+  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v1.3.2/Gantry-1.3.2.dmg"><strong>下载 Gantry 1.3.2</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v1.3.2">发布说明与校验值</a></p>
   <p><strong>原生 macOS · macOS 14.5+ · Apple 芯片与 Intel<br>完全免费，包括商业用途 · 无需 Gantry 账户 · 无分析遥测</strong></p>
   <p>此版本采用 ad-hoc 签名，<strong>未经 Apple 公证</strong>。</p>
   <p><a href="README.md">English</a> · <strong>简体中文</strong></p>
 </div>
 
-![Gantry 总览：本地配额、活跃会话、配置问题与上下文信息](assets/overview-1.3.0-dark.png)
+![Gantry 总览：本地配额、活跃会话、配置问题与上下文信息](assets/overview-1.3.2-light.png)
 
-*截图展示 Gantry 1.3.0，使用合成演示数据。各工具可用的测量项不同。中文介绍不代表应用界面已支持中文。*
+*截图展示 Gantry 1.3.2 预览版，使用合成演示数据。各工具可用的测量项不同。中文介绍不代表应用界面已支持中文。*
 
-## 1.3：少找一点，多做一点
+## 1.3.2：找回上下文，继续构建
 
-对话散落在不同工具里，配额和配置又在别处。Gantry 帮你把这些本地记录放到同一个工作台。
+把 AI 编程的对话、工具与配置放到一个原生 Mac 工作台。
 
-- **项目列表更清楚：** 独立的 Codex 对话放在 **Sessions → No project**，不再把生成的输出目录变成一排难懂的项目名。实际工作目录仍可在 Details 查看。
-- **会话列表更顺手：** 按日期筛选，用 **Columns** 选择并记住需要的列；查看详情时，所选会话保持可见。
-- **小窗口也好用：** Inventory 控件自动换行，浅色与深色布局更一致；修复窄窗口打开检查器时的崩溃，以及 macOS 27 表格的键盘焦点问题。
-- **日常细节更可靠：** 可以搜索 MCP 端点与共享技能的各个路径；清理前检查文件是否在预览后发生变化；通知权限等待结束后重新判断配额提醒；避免给名称相似的未知模型套用错误价格。
+- **接上之前的工作：** 查找会话、查看关联运行和记录中的文件变化；符合条件的已停止会话可在记录的工作目录中通过终端继续。
+- **更快到达目标：** 全新总览让最近的工作更容易找到；**⌘K** 可按项目、会话、能力或操作缩小搜索范围。
+- **更安心地检查配置：** 技能验证避免运行仓库的文件监视钩子；校验文件解析和项目列表更新更可靠，存在歧义的配置修改会被拒绝。
+- **更新由你决定：** 手动检查更新，或选择每周检查；下载在浏览器中打开，不会自动安装。
 
-**1.3 要求 macOS 14.5 或更新版本。** [完整发布说明（英文）→](docs/releases/1.3.0.md)
+[阅读 1.3.2 发布说明（英文）→](docs/releases/1.3.2.md)
 
 ## Gantry 能帮你看清什么
 
@@ -54,15 +54,15 @@
 
 MCP 检查可能启动已配置的服务器或访问选定的 HTTP 端点；服务器可以使用自身凭据并发起网络请求。你可以选择是否开启自动 stdio 基准测试。交接说明在点击复制后进入剪贴板，分享前请检查其中的私有内容。
 
-[隐私说明（英文）](PRIVACY.md) · [1.3.0 文件审计（英文）](docs/1.3.0-audit.md)
+[隐私说明（英文）](PRIVACY.md) · [1.3.2 文件审计（英文）](docs/1.3.2-audit.md)
 
 ## 下载与首次启动
 
-从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v1.3.0)下载 `Gantry-1.3.0.dmg` 和 `SHA256SUMS.txt`，核对 SHA-256 后打开 DMG，将 **Gantry** 拖入 **Applications**。
+从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v1.3.2)下载 `Gantry-1.3.2.dmg` 和 `SHA256SUMS.txt`，核对 SHA-256 后打开 DMG，将 **Gantry** 拖入 **Applications**。
 
 要求 **macOS 14.5 Sonoma 或更新版本**，支持 Apple 芯片和 Intel。此版本采用 ad-hoc 签名，**未经 Apple 公证**。如果 macOS 阻止首次启动，请在核对文件并决定信任下载后，按[安装说明（英文）](docs/getting-started.md)操作。校验值用于确认文件内容，不代表 Apple 认可或发布者身份认证。
 
-此版本没有内置更新源。在仓库中选择 **Watch → Custom → Releases** 可接收新版本通知。
+可通过 **Help → Check for Updates** 手动检查，或在设置中选择每周检查；更新需要手动安装。也可在仓库中选择 **Watch → Custom → Releases** 接收通知。
 
 ## 正确理解数据
 

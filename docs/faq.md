@@ -68,7 +68,7 @@ rules can all produce differences.
 
 ### Why does macOS block the download?
 
-Gantry 1.3.0 is ad-hoc signed and not notarized by Apple.
+Gantry 1.3.2 is ad-hoc signed and not notarized by Apple.
 See the [installation guide](getting-started.md) for verification and first-launch
 steps. Do not interpret a checksum as notarization.
 
@@ -81,7 +81,9 @@ Review the note for private content before sharing it.
 ### Does Gantry commit my files or resume an agent automatically?
 
 Git checks are read-only. Copying a resume command or handoff note does not
-execute it. You decide where and how to continue.
+execute it. For supported stopped sessions, choosing **Resume in Terminal**
+explicitly opens the recorded working folder and resumes the session; a copy
+command remains available when direct resume is unavailable.
 
 ### Why are details missing from an older Codex session?
 

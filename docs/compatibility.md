@@ -1,7 +1,7 @@
 # Supported tools and measurement limits
 
 Gantry is a native macOS application for **macOS 14.5 or later**, with a universal
-Apple silicon and Intel binary. The following describes the 1.3.0 reader
+Apple silicon and Intel binary. The following describes the 1.3.2 reader
 families, not a promise that every future agent release uses the same formats.
 
 Version 1.3 raises the minimum from macOS 13 to **macOS 14.5 Sonoma**. Check
