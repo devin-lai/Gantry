@@ -6,17 +6,17 @@ supported coding agent with local records makes the app useful.
 
 ## Install
 
-1. Get `Gantry-1.3.2.dmg` and `SHA256SUMS.txt` from the [official 1.3.2 release](https://github.com/devin-lai/Gantry/releases/tag/v1.3.2).
+1. Get `Gantry-2.0.0.dmg` and `SHA256SUMS.txt` from the [official 2.0.0 release](https://github.com/devin-lai/Gantry/releases/tag/v2.0.0).
 2. Compare the DMG's checksum with the value in the release notes or checksum file:
 
    ```sh
-   shasum -a 256 ~/Downloads/Gantry-1.3.2.dmg
+   shasum -a 256 ~/Downloads/Gantry-2.0.0.dmg
    ```
 
 3. Open the disk image and drag Gantry into Applications.
 4. Eject the disk image and open Gantry from Applications.
 
-Gantry 1.3.2 has an ad-hoc signature and is not notarized
+Gantry 2.0.0 has an ad-hoc signature and is not notarized
 by Apple. A checksum identifies the downloaded bytes; it does not establish
 Apple's approval or the publisher's identity. If macOS blocks the app, verify
 the download and decide whether you trust it, then use **System Settings →
@@ -39,18 +39,28 @@ Missing records or unsupported measurements are expected for some tools. Check
 [coverage](compatibility.md) before interpreting an empty view as a problem.
 For a concrete place to start, [choose one of six workflows](workflows.md).
 
+## Try Project Memory
+
+Project Memory is an opt-in pilot for Claude Code and Codex.
+
+1. In **Projects**, open **Review projects…** and choose **Turn on…** beside one project. Review the selected folders if you want to import existing Claude Code notes.
+2. On that project's **Project Memory** card, choose **Connect agents…** and **Preview changes** for the agent you want to use. Review the changes and apply them if you want to connect. For Codex startup context, review and trust the optional hook in Codex.
+3. Save a useful project decision, then start a new session in that project and ask the connected agent to recall it. Use **Review** in Project Memory to choose which notes can appear automatically at session start.
+
+The **Work notes** option starts off. Enable it separately if you want connected agents to be able to request short excerpts from how a prior session ended. [Privacy and local storage](../PRIVACY.md)
+
 ## Updates
 
-Gantry 1.3.2 checks for updates when you choose **Help → Check for Updates**,
+Gantry 2.0.0 checks for updates when you choose **Help → Check for Updates**,
 or weekly if you explicitly opt in. It opens a release download in your browser;
 it never downloads or installs updates automatically. You can also watch this
 repository's **Releases** notifications. Ad-hoc builds may ask for protected-folder
 access again after an update.
 
 Before upgrading, check that your Mac runs macOS 14.5 or later. Quit Gantry,
-open the 1.3.2 DMG, and replace Gantry in Applications. Keep Gantry's Application
+open the 2.0.0 DMG, and replace Gantry in Applications. Keep Gantry's Application
 Support folder if you want to retain its index and edit backups.
-[Read what's new in 1.3.2.](releases/1.3.2.md)
+[Read what's new in 2.0.0.](releases/2.0.0.md)
 
 ## Report a problem
 

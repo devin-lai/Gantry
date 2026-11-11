@@ -24,6 +24,12 @@ Gantry does not keep the patches or edited file contents as part of that
 changed-file list. **Load session details** deliberately reads more of a
 selected local Codex conversation and caches the resulting metadata.
 
+## Project Memory pilot
+
+Project Memory is opt-in per project. For Git repositories, it stores memories in local Git metadata and shares them across linked worktrees. Outside Git it uses a local `.memopier` folder. You choose which Claude Code notes to import, which agents to connect, and which memories to approve for session startup.
+
+Connected Claude Code and Codex sessions can receive approved startup text or request saved memories. The connected agent may send that context to its model provider under its own settings and privacy policy. Optional work notes are off by default. When enabled, they retain short excerpts of session content locally for later retrieval.
+
 ## Changes and active operations
 
 Supported configuration edits are previewed and backed up before writing. Files
@@ -44,7 +50,7 @@ commands, and paths; review it before pasting into another app or service.
 
 ## Updates and reports
 
-Gantry 1.3.2 checks its update feed on `raw.githubusercontent.com` when you
+Gantry checks its update feed on `raw.githubusercontent.com` when you
 request a check, or weekly only after you opt in. The request carries no Gantry
 version, identifier, or cookie; GitHub can receive ordinary connection information,
 including your IP address. Gantry does not automatically download or install updates.

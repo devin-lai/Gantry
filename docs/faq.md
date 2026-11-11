@@ -68,7 +68,7 @@ rules can all produce differences.
 
 ### Why does macOS block the download?
 
-Gantry 1.3.2 is ad-hoc signed and not notarized by Apple.
+Gantry 2.0.0 is ad-hoc signed and not notarized by Apple.
 See the [installation guide](getting-started.md) for verification and first-launch
 steps. Do not interpret a checksum as notarization.
 

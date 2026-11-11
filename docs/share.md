@@ -1,35 +1,23 @@
 # Share Gantry with another agent user
 
-![Gantry 1.3.2 preview with synthetic demo data](../assets/overview-1.3.2-light.png)
+![Gantry 2.0.0 Project Memory review with synthetic examples](../assets/project-memory-2.0.0.png)
 
-[Repository](https://github.com/devin-lai/Gantry) · [Gantry 1.3.2](https://github.com/devin-lai/Gantry/releases/tag/v1.3.2) · [简体中文介绍](../README.zh-CN.md)
+[Repository](https://github.com/devin-lai/Gantry) · [Gantry 2.0.0](https://github.com/devin-lai/Gantry/releases/tag/v2.0.0) · [简体中文介绍](../README.zh-CN.md)
 
 Share the official repository or release link so readers get the current
 documentation, license, first-launch instructions, and checksum together.
 
 ## A short description
 
-> Find your place. Get back to building. Gantry brings AI coding sessions,
-> quota, and MCP configuration together in one native Mac app. Search your
-> work, inspect the setup, and resume supported sessions. Free for personal
-> and commercial use. macOS 14.5+.
+> Pick up where your last agent left off. Gantry is a native Mac workspace for Claude Code, Codex, Cursor, and more. Find past sessions, see what changed, and bring selected project decisions across Claude Code and Codex. Free for personal and commercial use. macOS 14.5+.
 
 ## A little more context
 
-> Your conversation is in one tool, and your setup is scattered across others.
-> Gantry is a local workspace for Claude Code, Codex, Cursor, Antigravity,
-> OpenCode, and Copilot CLI. Find a saved conversation, review recorded
-> changes, see cached quota where supported, and inspect MCP configuration.
-> Version 1.3.2 adds a refreshed Overview, scoped ⌘K search, and supported
-> Terminal handoffs. No Gantry account or analytics telemetry. Apple silicon
-> and Intel, macOS 14.5+. Ad-hoc signed and not notarized by Apple; follow
-> the official first-launch guide.
+> Gantry 2.0 adds opt-in Project Memory for Claude Code and Codex. Save a decision once, review what can appear at startup, and find it again when you switch agents. Gantry also brings session history, cached quota, and MCP diagnostics into one Mac app. No Gantry account or analytics telemetry. Apple silicon and Intel, macOS 14.5+. This release uses ad-hoc signing and ships without Apple notarization. Follow the official first-launch guide.
 
 ## 简短介绍
 
-> 找回对话，理清配置，继续构建。Gantry 将 AI 编程会话、配额和 MCP 配置放进
-> 一个原生 Mac 工作台。1.3.2 带来全新总览、分类搜索和受支持会话的终端续接。
-> 个人与商业用途均免费，要求 macOS 14.5+。当前版本未经 Apple 公证，请先阅读安装说明。
+> 换个编程助手，也能接着上次的工作。Gantry 2.0 为 Claude Code 和 Codex 提供可选的项目记忆。找回过去的对话与文件改动，并让下一次会话查到你保留的项目决策。个人与商业用途均免费，要求 macOS 14.5 或更新版本。当前版本未经 Apple 公证，请先阅读安装说明。
 
 ## What to keep clear
 

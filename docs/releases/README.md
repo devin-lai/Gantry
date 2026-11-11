@@ -1,5 +1,7 @@
 # Gantry releases
 
+- [**2.0.0 — Pick up where your last agent left off**](2.0.0.md) · Opt-in Project Memory for Claude Code and Codex, with startup review and session-level recall evidence. Requires macOS 14.5+.
+
 - [**1.3.2 — Find your place. Get back to building.**](1.3.2.md): quicker navigation, session handoffs, safer setup inspection, and optional update checks. Requires macOS 14.5+.
 
 - [**1.3.0 — Less hunting. More building.**](1.3.0.md): clearer project organization, a more focused session browser, layouts that fit smaller windows, and safer everyday operations. Requires macOS 14.5+.

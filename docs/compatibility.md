@@ -1,11 +1,12 @@
 # Supported tools and measurement limits
 
 Gantry is a native macOS application for **macOS 14.5 or later**, with a universal
-Apple silicon and Intel binary. The following describes the 1.3.2 reader
-families, not a promise that every future agent release uses the same formats.
+Apple silicon and Intel binary. The table covers local records Gantry 2.0.0 can read.
 
 Version 1.3 raises the minimum from macOS 13 to **macOS 14.5 Sonoma**. Check
 your OS version before replacing an older Gantry installation.
+
+The opt-in Project Memory pilot supports Claude Code and Codex after you connect them. [Set up Project Memory](getting-started.md#try-project-memory)
 
 | Tool | Local records Gantry understands | Main limits |
 | --- | --- | --- |
