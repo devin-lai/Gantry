@@ -6,14 +6,14 @@ supported coding agent with local records makes the app useful.
 
 ## Install
 
-1. Get `Gantry-2.0.0.dmg` and `SHA256SUMS.txt` from the [official 2.1.0 release](https://github.com/devin-lai/Gantry/releases/tag/v2.1.0).
+1. Get `Gantry-2.1.0.dmg` and `SHA256SUMS.txt` from the [official 2.1.0 release](https://github.com/devin-lai/Gantry/releases/tag/v2.1.0).
 2. Compare the DMG's checksum with the value in the release notes or checksum file:
 
    ```sh
-   shasum -a 256 ~/Downloads/Gantry-2.0.0.dmg
+   shasum -a 256 ~/Downloads/Gantry-2.1.0.dmg
    ```
 
-3. The filename remains `Gantry-2.0.0.dmg`; this release contains **2.1.0 (build 178)**. Open the disk image and drag Gantry into Applications.
+3. Open `Gantry-2.1.0.dmg` and drag Gantry into Applications. This release contains **2.1.0 (build 178)**.
 4. Eject the disk image and open Gantry from Applications.
 
 Gantry 2.1.0 has an ad-hoc signature and is not notarized

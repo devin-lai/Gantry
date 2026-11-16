@@ -4,7 +4,7 @@
   <p><strong>Switch agents. Keep the thread.</strong></p>
   <p>Your local AI coding workspace for <strong>Claude Code, Codex, Cursor, and more</strong>.<br>Find the conversation, review what changed, and continue in Claude Code or Codex with a prompt you control.</p>
   <p>
-    <a href="https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v2.1.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 2.1.0 for macOS"></a>
+    <a href="https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.1.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v2.1.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 2.1.0 for macOS"></a>
   </p>
   <p><strong>Native macOS · Apple silicon &amp; Intel · macOS 14.5+<br>Completely free, including for commercial use · No Gantry account · No analytics telemetry</strong></p>
   <p>Ad-hoc signed; <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">First-launch instructions</a>.</p>
@@ -27,7 +27,7 @@ Claude Code finished a task. You want Codex to review it. Gantry helps you find 
 - **Keep useful project knowledge close.** The opt-in **Project Memory** pilot keeps selected decisions available for recall. Review exactly which notes can appear at session startup; manage connections and sources from **Memory options**.
 - **Spend less time chasing setup issues.** MCP checks now answer server pings correctly. Refresh follows moved configuration symlinks, session memory views update as records change, and cancelled skill reviews stop their remaining work.
 
-[**Download 2.1.0**](https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg) · [What's changed](docs/releases/2.1.0.md) · [Try continuation](docs/getting-started.md#continue-in-another-agent)
+[**Download 2.1.0**](https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.1.0.dmg) · [What's changed](docs/releases/2.1.0.md) · [Try continuation](docs/getting-started.md#continue-in-another-agent)
 
 ![Gantry 2.1.0 Overview with a featured recent conversation, quota, and setup findings](assets/overview-light-2.1.0.png)
 
@@ -88,11 +88,11 @@ Project Memory is stored locally. Connected agents may send memory context they 
 
 ## Download and first launch
 
-[**Download Gantry 2.1.0 for macOS**](https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg) · [Release notes and SHA-256](https://github.com/devin-lai/Gantry/releases/tag/v2.1.0)
+[**Download Gantry 2.1.0 for macOS**](https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.1.0.dmg) · [Release notes and SHA-256](https://github.com/devin-lai/Gantry/releases/tag/v2.1.0)
 
 Requires **macOS 14.5 Sonoma or later**, on Apple silicon or Intel. Open the DMG and drag **Gantry** into **Applications**.
 
-The download keeps the requested filename `Gantry-2.0.0.dmg`; the application inside is **2.1.0 (build 178)**. Verify it against the checksum on the **2.1.0** release page.
+Download `Gantry-2.1.0.dmg` and verify it against the checksum on the **2.1.0** release page. The application is **2.1.0 (build 178)**.
 
 This release is **ad-hoc signed and not notarized by Apple**. After checking the checksum and deciding to trust the download, follow the [first-launch instructions](docs/getting-started.md) if macOS blocks it. A checksum identifies the file; it does not authenticate its publisher.
 

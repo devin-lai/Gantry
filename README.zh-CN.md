@@ -3,7 +3,7 @@
   <h1>Gantry</h1>
   <p><strong>切换助手，接着做。</strong></p>
   <p>面向 <strong>Claude Code、Codex、Cursor 等工具</strong>的本地 AI 编程工作台。<br>找回对话、查看改动，用自己确认的提示词在 Claude Code 或 Codex 中继续工作。</p>
-  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg"><strong>下载 Gantry 2.1.0</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v2.1.0">发布说明与校验值</a></p>
+  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.1.0.dmg"><strong>下载 Gantry 2.1.0</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v2.1.0">发布说明与校验值</a></p>
   <p><strong>原生 macOS · macOS 14.5+ · Apple 芯片与 Intel<br>完全免费，包括商业用途 · 无需 Gantry 账户 · 无分析遥测</strong></p>
   <p>此版本采用 ad-hoc 签名，<strong>未经 Apple 公证</strong>。</p>
   <p><a href="README.md">English</a> · <strong>简体中文</strong></p>
@@ -18,7 +18,7 @@ Claude Code 做完实现，想让 Codex 接着审阅？先在 Gantry 找到刚�
 - **把项目经验留给下一次会话。** 自愿开启的 **Project Memory（项目记忆）** 试用功能保留选定决策供助手查询；会话启动内容仍由你预览和批准。通过 **Memory options** 管理连接与来源。
 - **减少配置排查中的干扰。** MCP 检查正确响应服务器 ping；配置符号链接变化后继续自动刷新；会话记忆随记录更新；取消技能审阅后停止剩余后台工作。
 
-[**下载 2.1.0**](https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg) · [完整更新说明（英文）](docs/releases/2.1.0.md) · [跨助手续接入门（英文）](docs/getting-started.md#continue-in-another-agent)
+[**下载 2.1.0**](https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.1.0.dmg) · [完整更新说明（英文）](docs/releases/2.1.0.md) · [跨助手续接入门（英文）](docs/getting-started.md#continue-in-another-agent)
 
 ![Gantry 2.1.0 Overview：最近的对话、配额与配置检查](assets/overview-light-2.1.0.png)
 
@@ -58,9 +58,9 @@ MCP 检查可能启动已配置的服务器或访问选定的 HTTP 端点；服�
 
 ## 下载与首次启动
 
-从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v2.1.0)下载 `Gantry-2.0.0.dmg` 和 `SHA256SUMS.txt`，核对 SHA-256 后打开 DMG，将 **Gantry** 拖入 **Applications**。
+从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v2.1.0)下载 `Gantry-2.1.0.dmg` 和 `SHA256SUMS.txt`，核对 SHA-256 后打开 DMG，将 **Gantry** 拖入 **Applications**。
 
-下载文件沿用 `Gantry-2.0.0.dmg` 名称，内部应用版本为 **2.1.0（build 178）**；请使用 **2.1.0** 发布页的校验值核对。
+下载文件为 `Gantry-2.1.0.dmg`，内部应用版本为 **2.1.0（build 178）**；请使用 **2.1.0** 发布页的校验值核对。
 
 要求 **macOS 14.5 Sonoma 或更新版本**，支持 Apple 芯片和 Intel。此版本采用 ad-hoc 签名，**未经 Apple 公证**。如果 macOS 阻止首次启动，请在核对文件并决定信任下载后，按[安装说明（英文）](docs/getting-started.md)操作。校验值用于确认文件内容，不代表 Apple 认可或发布者身份认证。
 

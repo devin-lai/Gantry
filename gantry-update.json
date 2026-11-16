@@ -1,6 +1,6 @@
 {
   "build": 178,
-  "dmg": "https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg",
+  "dmg": "https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.1.0.dmg",
   "minimumSystemVersion": "14.5",
   "notes": "Switch between Claude Code and Codex with editable handoffs and opt-in work notes. Discover a clearer Overview and Projects, plus MCP and refresh reliability fixes. macOS 14.5+. Ad-hoc signed; not notarized by Apple.",
   "published": "2026-11-16T09:48:29Z",
