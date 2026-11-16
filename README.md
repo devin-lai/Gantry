@@ -1,16 +1,16 @@
 <div align="center">
   <img src="assets/gantry-icon.png" width="96" alt="Gantry's teal octopus mascot">
   <h1>Gantry</h1>
-  <p><strong>Pick up where your last agent left off.</strong></p>
-  <p>Your local AI coding workspace for <strong>Claude Code, Codex, Cursor, and more</strong>.<br>Find past sessions, see what changed, and carry project decisions across Claude Code and Codex.</p>
+  <p><strong>Switch agents. Keep the thread.</strong></p>
+  <p>Your local AI coding workspace for <strong>Claude Code, Codex, Cursor, and more</strong>.<br>Find the conversation, review what changed, and continue in Claude Code or Codex with a prompt you control.</p>
   <p>
-    <a href="https://github.com/devin-lai/Gantry/releases/download/v2.0.0/Gantry-2.0.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v2.0.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 2.0.0 for macOS"></a>
+    <a href="https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg"><img src="https://img.shields.io/badge/Download_for_macOS-v2.1.0-168577?style=for-the-badge&amp;logo=apple&amp;logoColor=white" alt="Download Gantry 2.1.0 for macOS"></a>
   </p>
   <p><strong>Native macOS · Apple silicon &amp; Intel · macOS 14.5+<br>Completely free, including for commercial use · No Gantry account · No analytics telemetry</strong></p>
   <p>Ad-hoc signed; <strong>not notarized by Apple</strong>. <a href="docs/getting-started.md">First-launch instructions</a>.</p>
   <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p>
-    <a href="#project-memory-in-200">What's new</a> ·
+    <a href="#new-in-210-switch-agents-keep-the-thread">What's new</a> ·
     <a href="#why-gantry">Why Gantry</a> ·
     <a href="docs/workflows.md">Try a workflow</a> ·
     <a href="docs/compatibility.md">Supported tools</a> ·
@@ -18,19 +18,27 @@
   </p>
 </div>
 
-## Project Memory in 2.0.0
+## New in 2.1.0: switch agents, keep the thread
 
-Switch from Claude Code to Codex and bring the decisions that matter with you. With the opt-in **Project Memory** pilot, connected agents can recall saved decisions and lessons in enabled projects. You choose which notes can appear at session startup and can preview the exact text first.
+Claude Code finished a task. You want Codex to review it. Gantry helps you find that session, see how it ended, and open a new terminal session in the same project with an editable prompt that asks the next agent to pick up the saved work note.
 
-- **Keep the right context in reach.** Save a decision, import selected Claude Code notes, or review what an agent saved. Keep useful notes available for recall and disable outdated ones.
-- **See what the next session received.** Where local records provide the evidence, Gantry shows startup text and memory calls alongside the conversation. Optional work notes can provide a short excerpt of how the previous session ended.
-- **Get back to the work itself.** Search a past conversation, inspect recorded file changes and Git status, and resume supported sessions in Terminal. Check cached quota and diagnose MCP configuration from the same Mac app.
+- **Continue across Claude Code and Codex.** Eligible recent sessions offer **Continue in Codex** or **Continue in Claude Code**. Preview the prompt, edit it, then copy it or open it in Terminal. Requires enabled work notes, a saved note, a connected receiving agent, and the target CLI.
+- **Find your next action sooner.** A featured recent conversation, readable follow-ups, and a clearer project header put returning to work at the center of the native workspace.
+- **Keep useful project knowledge close.** The opt-in **Project Memory** pilot keeps selected decisions available for recall. Review exactly which notes can appear at session startup; manage connections and sources from **Memory options**.
+- **Spend less time chasing setup issues.** MCP checks now answer server pings correctly. Refresh follows moved configuration symlinks, session memory views update as records change, and cancelled skill reviews stop their remaining work.
 
-**Try it in one project.** In **Projects → Review projects…**, choose **Turn on…**, then open **Connect agents…** in that project's **Project Memory** card to preview the setup. [Project Memory walkthrough](docs/getting-started.md#try-project-memory) · [2.0.0 release notes](https://github.com/devin-lai/Gantry/releases/tag/v2.0.0)
+[**Download 2.1.0**](https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg) · [What's changed](docs/releases/2.1.0.md) · [Try continuation](docs/getting-started.md#continue-in-another-agent)
 
-![Gantry's Project Memory review with the exact startup context preview](assets/project-memory-2.0.0.png)
+![Gantry 2.1.0 Overview with a featured recent conversation, quota, and setup findings](assets/overview-light-2.1.0.png)
 
-*Project Memory with synthetic examples. Startup context requires your approval.*
+*Synthetic demo data. Coverage varies by tool; Project Memory and work notes are optional.*
+
+<details>
+  <summary><strong>See the workspace in dark appearance</strong></summary>
+
+![Gantry 2.1.0 Overview in dark appearance](assets/overview-dark-2.1.0.png)
+
+</details>
 
 ## Why Gantry
 
@@ -48,15 +56,6 @@ Your coding tools already keep useful evidence on your Mac. Gantry brings the sc
 Use Gantry alongside **Claude Code · Codex · Cursor · Antigravity · OpenCode · Copilot CLI**. Start with one tool; keep your existing workflow.
 
 **Coverage varies.** Quota is available for Claude Code and Codex. Cursor supports desktop conversation history, search, and configuration inventory; its usage, cost, and quota are unavailable. A configuration marked available is not proof that an agent loaded it. [See coverage and limits.](docs/compatibility.md)
-
-<details>
-  <summary><strong>See the Gantry workspace</strong></summary>
-
-![Gantry Overview with local quotas, sessions, and setup findings](assets/overview-1.3.2-light.png)
-
-*Overview in 1.3.2 with synthetic demo data.*
-
-</details>
 
 ## Try it with a recent session
 
@@ -89,9 +88,11 @@ Project Memory is stored locally. Connected agents may send memory context they 
 
 ## Download and first launch
 
-[**Download Gantry-2.0.0.dmg**](https://github.com/devin-lai/Gantry/releases/download/v2.0.0/Gantry-2.0.0.dmg) · [Release notes and SHA-256](https://github.com/devin-lai/Gantry/releases/tag/v2.0.0)
+[**Download Gantry 2.1.0 for macOS**](https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg) · [Release notes and SHA-256](https://github.com/devin-lai/Gantry/releases/tag/v2.1.0)
 
 Requires **macOS 14.5 Sonoma or later**, on Apple silicon or Intel. Open the DMG and drag **Gantry** into **Applications**.
+
+The download keeps the requested filename `Gantry-2.0.0.dmg`; the application inside is **2.1.0 (build 178)**. Verify it against the checksum on the **2.1.0** release page.
 
 This release is **ad-hoc signed and not notarized by Apple**. After checking the checksum and deciding to trust the download, follow the [first-launch instructions](docs/getting-started.md) if macOS blocks it. A checksum identifies the file; it does not authenticate its publisher.
 

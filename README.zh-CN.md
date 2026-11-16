@@ -1,27 +1,28 @@
 <div align="center">
   <img src="assets/gantry-icon.png" width="96" alt="Gantry 的青绿色章鱼吉祥物">
   <h1>Gantry</h1>
-  <p><strong>换个编程助手，也能接着上次的工作。</strong></p>
-  <p>面向 <strong>Claude Code、Codex、Cursor 等工具</strong>的本地 AI 编程工作台。<br>找回会话、查看文件变化，让 Claude Code 和 Codex 都能查到你保留的项目决策。</p>
-  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v2.0.0/Gantry-2.0.0.dmg"><strong>下载 Gantry 2.0.0</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v2.0.0">发布说明与校验值</a></p>
+  <p><strong>切换助手，接着做。</strong></p>
+  <p>面向 <strong>Claude Code、Codex、Cursor 等工具</strong>的本地 AI 编程工作台。<br>找回对话、查看改动，用自己确认的提示词在 Claude Code 或 Codex 中继续工作。</p>
+  <p><a href="https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg"><strong>下载 Gantry 2.1.0</strong></a> · <a href="docs/getting-started.md">安装说明（英文）</a> · <a href="https://github.com/devin-lai/Gantry/releases/tag/v2.1.0">发布说明与校验值</a></p>
   <p><strong>原生 macOS · macOS 14.5+ · Apple 芯片与 Intel<br>完全免费，包括商业用途 · 无需 Gantry 账户 · 无分析遥测</strong></p>
   <p>此版本采用 ad-hoc 签名，<strong>未经 Apple 公证</strong>。</p>
   <p><a href="README.md">English</a> · <strong>简体中文</strong></p>
 </div>
 
-## 2.0.0 新功能 · 项目记忆
+## 2.1.0 新功能 · 切换助手，接着做
 
-从 Claude Code 切到 Codex 时，把需要的项目决策一起带过去。**Project Memory（项目记忆）**按项目自愿开启，目前处于试用阶段。已连接的助手可以查找保存的决策与经验。你可以预览并批准会话启动时提供的内容。
+Claude Code 做完实现，想让 Codex 接着审阅？先在 Gantry 找到刚才的会话、查看结束记录，再预览交接提示词，在同一项目中打开新的终端会话。
 
-- **保留值得复用的经验。** 保存决策、导入选定的 Claude Code 笔记，或审阅助手保存的内容。其他笔记可保留供按需查询，过时的内容可停用。
-- **查看下一次会话收到的内容。** 本地记录有据可查时，Gantry 会显示启动提示和记忆调用。可选的工作笔记允许助手请求上一轮会话结束时的简短原文摘录，默认关闭。
-- **找回对话与实际改动。** 搜索会话、查看记录中的文件变化与当前 Git 状态，并在终端续接受支持的会话。也可以查看本地缓存的配额或诊断 MCP 配置。
+- **Claude Code 与 Codex 之间续接工作。** 符合条件的近期会话会显示 **Continue in Codex** 或 **Continue in Claude Code**。提示词可编辑、复制，也可确认后在终端打开。需要开启工作笔记、有已保存的笔记、连接接收交接的助手，并安装目标 CLI。
+- **更容易找到下一步。** Overview 突出最近的对话，后续工作列表更清晰，Projects 的项目标题和操作也更醒目。
+- **把项目经验留给下一次会话。** 自愿开启的 **Project Memory（项目记忆）** 试用功能保留选定决策供助手查询；会话启动内容仍由你预览和批准。通过 **Memory options** 管理连接与来源。
+- **减少配置排查中的干扰。** MCP 检查正确响应服务器 ping；配置符号链接变化后继续自动刷新；会话记忆随记录更新；取消技能审阅后停止剩余后台工作。
 
-**先试一个项目。** 在 **Projects → Review projects…** 中为一个项目选择 **Turn on…**，再打开该项目的 **Project Memory → Connect agents…** 预览连接设置。[项目记忆入门（英文）](docs/getting-started.md#try-project-memory) · [2.0.0 发布说明（英文）](https://github.com/devin-lai/Gantry/releases/tag/v2.0.0)
+[**下载 2.1.0**](https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg) · [完整更新说明（英文）](docs/releases/2.1.0.md) · [跨助手续接入门（英文）](docs/getting-started.md#continue-in-another-agent)
 
-![Gantry 项目记忆审阅界面与会话启动内容预览](assets/project-memory-2.0.0.png)
+![Gantry 2.1.0 Overview：最近的对话、配额与配置检查](assets/overview-light-2.1.0.png)
 
-*截图使用合成示例。启动内容由你批准。中文介绍不代表应用界面已支持中文。*
+*截图使用合成数据。各工具覆盖范围不同；项目记忆和工作笔记均为可选功能。中文介绍不代表应用界面已支持中文。*
 
 ## Gantry 能帮你看清什么
 
@@ -57,7 +58,9 @@ MCP 检查可能启动已配置的服务器或访问选定的 HTTP 端点；服�
 
 ## 下载与首次启动
 
-从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v2.0.0)下载 `Gantry-2.0.0.dmg` 和 `SHA256SUMS.txt`，核对 SHA-256 后打开 DMG，将 **Gantry** 拖入 **Applications**。
+从[官方发布页](https://github.com/devin-lai/Gantry/releases/tag/v2.1.0)下载 `Gantry-2.0.0.dmg` 和 `SHA256SUMS.txt`，核对 SHA-256 后打开 DMG，将 **Gantry** 拖入 **Applications**。
+
+下载文件沿用 `Gantry-2.0.0.dmg` 名称，内部应用版本为 **2.1.0（build 178）**；请使用 **2.1.0** 发布页的校验值核对。
 
 要求 **macOS 14.5 Sonoma 或更新版本**，支持 Apple 芯片和 Intel。此版本采用 ad-hoc 签名，**未经 Apple 公证**。如果 macOS 阻止首次启动，请在核对文件并决定信任下载后，按[安装说明（英文）](docs/getting-started.md)操作。校验值用于确认文件内容，不代表 Apple 认可或发布者身份认证。
 

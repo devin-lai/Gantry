@@ -1,5 +1,7 @@
 # Gantry releases
 
+- [**2.1.0 — Switch agents. Keep the thread.**](2.1.0.md) · Editable Claude Code/Codex continuation, a refreshed native workspace, and MCP, refresh, and background-work fixes. Requires macOS 14.5+.
+
 - [**2.0.0 — Pick up where your last agent left off**](2.0.0.md) · Opt-in Project Memory for Claude Code and Codex, with startup review and session-level recall evidence. Requires macOS 14.5+.
 
 - [**1.3.2 — Find your place. Get back to building.**](1.3.2.md): quicker navigation, session handoffs, safer setup inspection, and optional update checks. Requires macOS 14.5+.

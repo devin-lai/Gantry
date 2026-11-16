@@ -1,34 +1,28 @@
 # Share Gantry with another agent user
 
-![Gantry 2.0.0 Project Memory review with synthetic examples](../assets/project-memory-2.0.0.png)
+![Gantry 2.1.0 with synthetic demo data](../assets/overview-light-2.1.0.png)
 
-[Repository](https://github.com/devin-lai/Gantry) · [Gantry 2.0.0](https://github.com/devin-lai/Gantry/releases/tag/v2.0.0) · [简体中文介绍](../README.zh-CN.md)
-
-Share the official repository or release link so readers get the current
-documentation, license, first-launch instructions, and checksum together.
+[Repository](https://github.com/devin-lai/Gantry) · [Gantry 2.1.0](https://github.com/devin-lai/Gantry/releases/tag/v2.1.0) · [简体中文介绍](../README.zh-CN.md)
 
 ## A short description
 
-> Pick up where your last agent left off. Gantry is a native Mac workspace for Claude Code, Codex, Cursor, and more. Find past sessions, see what changed, and bring selected project decisions across Claude Code and Codex. Free for personal and commercial use. macOS 14.5+.
+> Switch agents. Keep the thread. Gantry is a native Mac workspace for Claude Code, Codex, Cursor, and more. Find past conversations, review changes, and continue in Claude Code or Codex with an editable handoff. Local-first and free for personal and commercial use. macOS 14.5+.
 
-## A little more context
+## A release introduction
 
-> Gantry 2.0 adds opt-in Project Memory for Claude Code and Codex. Save a decision once, review what can appear at startup, and find it again when you switch agents. Gantry also brings session history, cached quota, and MCP diagnostics into one Mac app. No Gantry account or analytics telemetry. Apple silicon and Intel, macOS 14.5+. This release uses ad-hoc signing and ships without Apple notarization. Follow the official first-launch guide.
+> Claude Code finished the implementation. Want Codex to review it? Gantry 2.1.0 helps you find that session and launch the next one in the same project with a prompt you control. Continuation uses optional saved work notes and connected agents. A refreshed Overview, clearer Projects, cached quota, and MCP diagnostics keep the surrounding setup in view. Apple silicon and Intel. No Gantry account or analytics telemetry.
 
 ## 简短介绍
 
-> 换个编程助手，也能接着上次的工作。Gantry 2.0 为 Claude Code 和 Codex 提供可选的项目记忆。找回过去的对话与文件改动，并让下一次会话查到你保留的项目决策。个人与商业用途均免费，要求 macOS 14.5 或更新版本。当前版本未经 Apple 公证，请先阅读安装说明。
+> 切换助手，接着做。Gantry 2.1.0 将 Claude Code、Codex、Cursor 等工具的本地会话放进原生 Mac 工作台。找回对话、查看改动，用可编辑的交接提示词启动下一次 Claude Code 或 Codex 会话。续接需要自愿开启的工作笔记、已连接的助手与目标 CLI。个人与商业用途均免费，macOS 14.5+。
 
-## What to keep clear
+Share the official repository or release link so readers get the current download, checksum, license, and first-launch instructions together. This release is ad-hoc signed and not notarized by Apple; link to the [installation guide](getting-started.md).
 
-- Gantry is an independent companion app; tool coverage varies. Quota coverage is for Claude Code and Codex. Cursor includes desktop history and search, with usage, cost, and quota unavailable.
-- Costs are estimates at API rates, and quotas are locally cached readings. Avoid presenting them as billing data or promising savings.
-- Changed files come from recorded edit tools; Git checks do not establish who owns a change. Handoff notes contain recorded content, not a newly generated model summary.
-- Gantry is completely free, including for commercial use. No separate permission is needed for business, employer, or client use.
-- Link to the official download rather than rehosting the DMG. The [license](../LICENSE) does not grant a general reuse license for branding, artwork, or documentation.
-- Use synthetic examples when discussing a workflow. Never share private session content, credentials, account identifiers, or unredacted diagnostics.
+## Keep the claims accurate
 
-The 1.3.2 preview [Overview](../assets/overview-1.3.2-light.png), along with
-the earlier 1.3.0 [Sessions](../assets/sessions-1.3.0-light.png) and
-[Doctor](../assets/doctor-1.3.0-light.png) screenshots, illustrates the interface
-with synthetic data. They are not customer records or performance benchmarks.
+- Continuation opens a new session and asks the receiving agent to retrieve a saved note. It needs enabled work notes, an available note, a connected receiving agent, and the target CLI.
+- Project Memory remains an opt-in pilot. Startup context requires approval. Connected agents may send received context to their model providers.
+- Tool coverage varies. Quota is supported for Claude Code and Codex; Cursor includes desktop history and search, with usage, cost, and quota unavailable.
+- Quotas are cached readings and costs are API-rate estimates. They are not invoices or promises of savings. Recorded file changes do not capture every shell side effect.
+- Gantry is free for personal and commercial use. The public repository hosts documentation and downloads; application source remains closed-source. See [LICENSE](../LICENSE) for branding and reuse terms.
+- The screenshots use synthetic data and have nonessential metadata removed. Never share private session content, credentials, account identifiers, or unredacted diagnostics.

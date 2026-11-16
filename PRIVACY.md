@@ -28,7 +28,9 @@ selected local Codex conversation and caches the resulting metadata.
 
 Project Memory is opt-in per project. For Git repositories, it stores memories in local Git metadata and shares them across linked worktrees. Outside Git it uses a local `.memopier` folder. You choose which Claude Code notes to import, which agents to connect, and which memories to approve for session startup.
 
-Connected Claude Code and Codex sessions can receive approved startup text or request saved memories. The connected agent may send that context to its model provider under its own settings and privacy policy. Optional work notes are off by default. When enabled, they retain short excerpts of session content locally for later retrieval.
+Connected Claude Code and Codex sessions can receive approved startup text or request saved memories. The connected agent may send that context to its model provider under its own settings and privacy policy. Optional work notes are off by default. When enabled, they retain recorded session endings, prompts, final reports, and changed-file metadata locally within size limits for later retrieval. Work notes can contain private session content. Gantry must be running to write them. Folder exclusions and the global work-note switch control collection.
+
+**Continue in Claude Code/Codex** previews an editable prompt naming a saved work note, then copies that prompt or starts a new interactive terminal session when you choose. The receiving connected agent can retrieve the note through the pickup tool. Launch and pickup activity counts stay local; those measurements do not contain prompt or work-note text.
 
 ## Changes and active operations
 
