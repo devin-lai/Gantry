@@ -1,10 +1,10 @@
 {
-  "build": 165,
-  "dmg": "https://github.com/devin-lai/Gantry/releases/download/v2.0.0/Gantry-2.0.0.dmg",
+  "build": 178,
+  "dmg": "https://github.com/devin-lai/Gantry/releases/download/v2.1.0/Gantry-2.0.0.dmg",
   "minimumSystemVersion": "14.5",
-  "notes": "Gantry 2.0.0 adds opt-in Project Memory for Claude Code and Codex. Preview startup context and see what reached your next session. Requires macOS 14.5 or later. Ad-hoc signed.",
-  "published": "2026-11-11T07:07:49Z",
-  "revision": "2.0.0",
-  "sha256": "f05aa87059a2a76fc13c3925cc2dad896ec08ab13eb05c00391f610d92a2337b",
-  "version": "2.0.0"
+  "notes": "Switch between Claude Code and Codex with editable handoffs and opt-in work notes. Discover a clearer Overview and Projects, plus MCP and refresh reliability fixes. macOS 14.5+. Ad-hoc signed; not notarized by Apple.",
+  "published": "2026-11-16T09:48:29Z",
+  "revision": "2.1.0",
+  "sha256": "dc1ee682cd54d72faba915e06b26ba3771d53ebed7c661ccd1acda684a6a88ea",
+  "version": "2.1.0"
 }
